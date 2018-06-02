@@ -1,0 +1,13 @@
+package com.example.nbhung.demotwitter.common;
+
+public enum  ErrorType {
+    ERROR_LOGIN,
+    ERROR_EMAIL_NOT_CONTAIN_A,
+    ERROR_LENGTH_PASSWORD,
+    ERROR_EMAIL_EMPTY,
+    ERROR_PASSWORD_EMPTY,
+    ERROR_REGISTER,
+    ERROR_USERNAME_EMPTY,
+    ERROR_CONFIRM_PASSWORD,
+    ERROR_PASSWORD_NOT_SAME
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red_polygon">#22ED5555</color>
+    <color name="tv_white">#f5efef</color>
+    <color name="bg_brow">#301717</color>
+
+    <color name="tv_black">#151414</color>
+    <color name="bg_notification">#b3aeae</color>
+    <color name="darker_gray">#FF999999</color>
+    <color name="transparent">@android:color/transparent</color>
+</resources>

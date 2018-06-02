@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B5E20</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#ed0505</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="buttonpress">#7b06f9</color>
+    <color name="colorchangerate">#ef06dc</color>
+    <color name="colornormalrate">#8a58ed</color>
+    <color name="colorbuttonnormal">#f7ef08</color>
+    <color name="colortextprice">#f4ec05</color>
+    <color name="colortextprice1">#06d6ed</color>
+    <color name="textDone">#07ec5b</color>
+    <color name="textCancel">#ed0505</color>
+    <color name="textBlack">#fd060000</color>
+    <color name="textWhite">#FDFDFE</color>
+    <color name="textYellow">#fce305</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0050ff</color>
+    <color name="backbroundregister">#9E9E9E</color>
+    <color name="tvred">#f10404</color>
+    <color name="tvgreen">#06f71a</color>
+</resources>

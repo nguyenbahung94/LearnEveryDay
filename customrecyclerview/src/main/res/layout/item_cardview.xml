@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        cardview:contentPadding="10dp"
+        android:id="@+id/cardName"
+        cardview:cardCornerRadius="5dp"
+        cardview:cardElevation="4dp"
+        cardview:cardPreventCornerOverlap="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_cardview"
+            android:text="jljlajsdjaksjsdlslajfljaljsdlja;j;fka;s;lj;ajf"
+            android:id="@+id/tvCarView"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

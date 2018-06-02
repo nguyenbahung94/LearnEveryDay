@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingTop="56dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ic_if_profle_1055000"
+            android:transitionName="@string/name_transition" />
+
+        <android.support.design.widget.TextInputLayout style="@style/edt_style">
+
+            <EditText
+                android:id="@+id/edt_name"
+                style="@style/edt_style"
+                android:hint="@string/name"
+                android:inputType="textNoSuggestions|textVisiblePassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout style="@style/edt_style">
+
+            <EditText
+                android:id="@+id/edt_password"
+                style="@style/edt_style"
+                android:hint="@string/pass"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/button_style"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/tv_registerAccount"
+            style="@style/tv_style"
+            android:text="@string/textunderline" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgtransition"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_if_profle_1055000"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/itemParentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/pstName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:paddingEnd="0dp"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="0dp"
+            android:paddingStart="@dimen/padding_small"
+            android:textStyle="bold"
+            tools:text="Phan Thanh Tùng" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/scoreTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:textColor="@color/black"
+                android:visibility="visible"
+                tools:text="(1)" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnScore"
+                android:layout_width="@dimen/small_button_size"
+                android:layout_height="@dimen/small_button_size"
+                android:layout_margin="@dimen/margin_button"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_toLeftOf="@id/scoreTimes"
+                android:layout_toStartOf="@id/scoreTimes"
+                android:background="@drawable/pst_item_score_background"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                tools:text="2.9" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnscoreTimes"
+                android:layout_width="@dimen/small_button_size"
+                android:layout_height="@dimen/small_button_size"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin_button"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:background="@drawable/black_button_shape"
+                android:text="2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/BrownSeparateLine"
+        android:layout_width="match_parent"
+        android:layout_below="@id/itemParentView">
+
+    </FrameLayout>
+</RelativeLayout>

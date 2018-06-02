@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DemoTwitter</string>
+    <string name="error_have_some_error">have some error</string>
+    <string name="txt_loading">Loading....</string>
+    <string name="title_hello_again">Hello Again</string>
+    <string name="title_clean_architecture">Clean Architecture</string>
+    <string name="hint_text_user_name">User name</string>
+    <string name="hint_text_password">Password</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_register">Register</string>
+    <string name="txt_login_by_facebook">Login by facebook</string>
+    <string name="error_when_login">error when login</string>
+    <string name="error_email_empty">email empty</string>
+    <string name="error_password_empty">error password empty</string>
+    <string name="error_length_to_short">length password must be 6 characters</string>
+    <string name="error_email_incorrect">email incorrect</string>
+    <string name="edt_hint_email">Email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="title_register_success">Register Success</string>
+    <string name="message_confirm_email">Click to confirm email!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Personal</item>
+    </array>
+</resources>

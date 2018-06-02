@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Fix issue on android N and above: android.os.FileUriExposedException: file:///storage/emulated/0...-->
+    <!--https://stackoverflow.com/questions/38200282/android-os-fileuriexposedexception-file-storage-emulated-0-test-txt-exposed-->
+    <!--https://developer.android.com/reference/android/support/v4/content/FileProvider.html-->
+    <external-path
+        name="file_root"
+        path="." />
+</paths>

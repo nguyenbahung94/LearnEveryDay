@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">StockMarket</string>
+    <string name="desc">desc</string>
+    <string name="nav_menu_1">ExchangeRate</string>
+    <string name="nav_menu_2">Convert</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_menu_1</item>
+        <item>@string/nav_menu_2</item>
+    </string-array>
+    <string name="title_echangerate">Exchange Rate</string>
+    <string name="stock_market">Stock Market</string>
+    <string name="userget">Convert Currency</string>
+    <string name="nickname">Nickname</string>
+    <string name="name">Username</string>
+    <string name="pass">Password</string>
+    <string name="login">Log in</string>
+    <string name="logout">Log out</string>
+    <string name="textunderline"><u>Register Account</u></string>
+    <string name="description">Description</string>
+    <string name="updateprofile">UPDATE PROFILE</string>
+    <string name="personalinformation">PERSONAL INFOMATION</string>
+    <string name="readlincence">READ LINCENCE</string>
+    <string name="compeletedregister">Completed Register</string>
+    <string name="fragmentinfor">FragmentInfor</string>
+    <string name="fragmentlincence">FragmentLincence</string>
+    <string name="save">Save</string>
+    <string name="choose_fragment">CHOOSE_FRAGMENT</string>
+    <string name="profile">ProFile</string>
+    <string name="infor">Infor</string>
+    <string name="lincence">Lincence</string>
+    <string name="result_fragment">RESULT_FRAGMENT</string>
+    <string name="currency">Currency :</string>
+    <string name="price">Price :</string>
+    <string name="photo_nick_name">photo,nick name</string>
+    <string name="personal_information">PERSONAL INFORMATION</string>
+    <string name="convert_currency">Convert Currency</string>
+    <string name="from">From :</string>
+    <string name="to">To   :</string>
+    <string name="hintinput_value">Input value</string>
+    <string name="result">result</string>
+    <string name="ok">OK</string>
+    <string name="refreshing">refreshing success!</string>
+    <string name="loading">Loading data....</string>
+    <string name="wait">Please wait…</string>
+    <string name="avatar">avatar</string>
+    <string name="id">ID</string>
+    <string name="data">data</string>
+    <string name="iduser">iduser</string>
+    <string name="imageuser">imageuser</string>
+    <string name="passuser">passuser</string>
+    <string name="fullname">fullname</string>
+    <string name="sex">sex</string>
+    <string name="birthday">birthday</string>
+    <string name="rule">rule</string>
+    <string name="phone">phone</string>
+    <string name="edit">edit</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birth_day">Birth day</string>
+    <string name="rule_of_company">Rule of company</string>
+    <string name="choose">choose</string>
+    <string name="take_photo">take photo</string>
+    <string name="name_transition">transition</string>
+    <string-array name="type_from">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>GBP</item>
+        <item>JPY</item>
+    </string-array>
+    <string-array name="type_request">
+        <item>EURUSD</item>
+        <item>USDJPY</item>
+        <item>GBPUSD</item>
+        <item>USDCHF</item>
+        <item>EURCHF</item>
+        <item>AUDUSD</item>
+        <item>USDCAD</item>
+        <item>NZDUSD</item>
+        <item>EURGBP</item>
+        <item>EURJPY</item>
+        <item>GBPJPY</item>
+        <item>CHFJPY</item>
+        <item>GBPCHF</item>
+        <item>EURAUD</item>
+        <item>EURCAD</item>
+        <item>AUDCAD</item>
+        <item>AUDJPY</item>
+        <item>CADJPY</item>
+    </string-array>
+</resources>

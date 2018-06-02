@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A80000</color>
+    <color name="colorPrimaryDark">#760000</color>
+    <color name="colorAccent">#ff9966</color>
+    <color name="blue_sky">#0047ab</color>
+    <color name="lighter_blue_sky">#DCF2FF</color>
+    <color name="light_blue_sky">#9DCDEC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="location_icon_color">#D70227</color>
+    <color name="outlet_detail_color">#D0C6C5</color>
+    <color name="semi_red">#A80000</color>
+    <color name="yellow_answer_button">#FFBA02</color>
+    <color name="green_answer_button">#03D113</color>
+    <color name="light_gray_opa_40">#66B8B8B8</color>
+    <color name="light_gray">#B8B8B8</color>
+    <color name="black">#000000</color>
+    <color name="red_brown">#bb3e17</color>
+    <color name="light_red">#cc0000</color>
+</resources>

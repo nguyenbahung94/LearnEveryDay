@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:paddingEnd="@dimen/picked_option_padding_horizontal"
+        android:paddingLeft="@dimen/picked_option_padding_horizontal"
+        android:paddingRight="@dimen/picked_option_padding_horizontal"
+        android:paddingStart="@dimen/picked_option_padding_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:attr/textColorAlertDialogListItem" />
+
+    <FrameLayout
+        android:id="@+id/line"
+        style="@style/RedSeparateLineStyle"
+        android:layout_width="match_parent" />
+</LinearLayout>

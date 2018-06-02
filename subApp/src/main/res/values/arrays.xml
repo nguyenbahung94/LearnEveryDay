@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hash_pst_list">
+        <item>Nguyễn Thị Thu Hiền</item>
+        <item>Võ Thị Thúy Vy</item>
+        <item>Hồ Thị Nghĩa</item>
+        <item>Nguyễn Thị Huyền Trân</item>
+        <item>Nguyễn Thị Trà My</item>
+        <item>0982050892</item>
+        <item>Nguyễn Thị Thu</item>
+        <item>Nguyễn Thị Thu Hiền</item>
+        <item>Võ Thị Thúy Vy</item>
+        <item>Hồ Thị Nghĩa</item>
+        <item>Nguyễn Thị Huyền Trân</item>
+        <item>Nguyễn Thị Trà My</item>
+        <item>0982050892</item>
+        <item>Nguyễn Thị Thu</item>
+        <item>Nguyễn Thị Thu Hiền</item>
+        <item>Võ Thị Thúy Vy</item>
+        <item>Hồ Thị Nghĩa</item>
+        <item>Nguyễn Thị Huyền Trân</item>
+        <item>Nguyễn Thị Trà My</item>
+        <item>0982050892</item>
+        <item>Nguyễn Thị Thu</item>
+    </string-array>
+
+    <string-array name="hash_outlet_list">
+        <item>(07:00 - 10:00)Cafe Vip</item>
+        <item>(07:00 - 10:00)Cay Quay Boc Lua</item>
+        <item>(07:00 - 10:00)Quan Pho Nuong</item>
+        <item>(07:00 - 10:00)Quan Vu</item>
+        <item>(07:00 - 10:00)Quan Zone</item>
+        <item>(07:00 - 10:00)Cafe Good No1</item>
+        <item>(07:00 - 10:00)Cafe Vip</item>
+        <item>(07:00 - 10:00)Cay Quay Boc Lua</item>
+        <item>(07:00 - 10:00)Quan Pho Nuong</item>
+        <item>(07:00 - 10:00)Quan Vu</item>
+        <item>(07:00 - 10:00)Quan Zone</item>
+        <item>(07:00 - 10:00)Cafe Good No1</item>
+        <item>(07:00 - 10:00)Cafe Vip</item>
+        <item>(07:00 - 10:00)Cay Quay Boc Lua</item>
+        <item>(07:00 - 10:00)Quan Pho Nuong</item>
+        <item>(07:00 - 10:00)Quan Vu</item>
+        <item>(07:00 - 10:00)Quan Zone</item>
+        <item>(07:00 - 10:00)Cafe Good No1</item>
+        <item>(07:00 - 10:00)Cafe Vip</item>
+        <item>(07:00 - 10:00)Cay Quay Boc Lua</item>
+        <item>(07:00 - 10:00)Quan Pho Nuong</item>
+        <item>(07:00 - 10:00)Quan Vu</item>
+        <item>(07:00 - 10:00)Quan Zone</item>
+        <item>(07:00 - 10:00)Cafe Good No1</item>
+    </string-array>
+    <string-array name="hast_outlet_address">
+        <item>73 Mac Thi Buoi</item>
+        <item>58 Dinh Tien Hoang</item>
+        <item>150 Hung Vuong</item>
+        <item>k120 Nguyen Cong Tru</item>
+        <item>37 Ly Thuong Kiet</item>
+        <item>22 Hoang Dieu</item>
+        <item>73 Mac Thi Buoi</item>
+        <item>58 Dinh Tien Hoang</item>
+        <item>150 Hung Vuong</item>
+        <item>k120 Nguyen Cong Tru</item>
+        <item>37 Ly Thuong Kiet</item>
+        <item>22 Hoang Dieu</item>
+        <item>73 Mac Thi Buoi</item>
+        <item>58 Dinh Tien Hoang</item>
+        <item>150 Hung Vuong</item>
+        <item>k120 Nguyen Cong Tru</item>
+        <item>37 Ly Thuong Kiet</item>
+        <item>22 Hoang Dieu</item>
+        <item>73 Mac Thi Buoi</item>
+        <item>58 Dinh Tien Hoang</item>
+        <item>150 Hung Vuong</item>
+        <item>k120 Nguyen Cong Tru</item>
+        <item>37 Ly Thuong Kiet</item>
+        <item>22 Hoang Dieu</item>
+    </string-array>
+    <string-array name="hash_preparing_questions">
+        <item>1. Tác phong làm việc(Trang phục, make up, cách thức đi lại, chọn vị trí làm hình ảnh) ?</item>
+        <item>2. Chăm sóc kĩ càng dụng cụ làm việc do công ty cung cấp(presenter, điện thoại, túi xách, giầy, đồng phục,&#8230;) ?</item>
+        <item>3. Chào hỏi chủ cửa hàng hoặc đại diện quán &amp; giới thiệu chương trình(đang áp dụng) ?</item>
+        <item>4. Cập nhật dữ liệu về thông tin điểm bán(check hàng tồn, kiểm tra POSM, &#8230;) ?</item>
+    </string-array>
+    <string-array name="hash_customer_reach_questions">
+        <item>1. Tiến hành tiếp cận khách hàng một cách nhã nhặn, lịch sự(Chào hỏi, giới thiệu tên,&#8230;) ?</item>
+        <item>2. Thái độ và tinh thần vui vẻ, nhiệt tình ?</item>
+        <item>3. Chủ động tiếp cận khách hàng ?</item>
+        <item>4. Tiếp cận đúng đối tượng(theo scheme chương trình đang áp dụng) ?</item>
+        <item>5. Xử lí tốt các tình huống khó khăn(các than phiền của khách về sản phẩm, chương trình, &#8230;) ?</item>
+        <item>6. Tạo ấn tượng lâu dài cho khách hàng(chào, cảm ơn vì đã tin dùng sản phẩm, cảm ơn và mong muốn khách hàng sẽ dùng sản phẩm trong thời gian tới, &#8230;) ?</item>
+    </string-array>
+    <string-array name="hash_product_introducing_questions">
+        <item>1. Giới thiệu được tất cả các đặc tính và truyền tải được thông điệp của sản phẩm ?</item>
+        <item>2. Sử dụng hiệu quả các công cụ hỗ trợ bán hàng(presneter, AR Game, &#8230;) ?</item>
+        <item>3. Giới thiệu đúng scheme chương trình(đang áp dụng) ?</item>
+    </string-array>
+    <string-array name="hash_selling_process_questions">
+        <item>1. Báo cáo online, báo cáo OOS - Pricing, thuốc Back up, quản lý tem phôi, giấy bạc ?</item>
+        <item>2. Thực hiện đúng quy trình các bước bán hàng ?</item>
+    </string-array>
+    <string-array name="hash_checking_questions">
+        <item>1. Tuân thủ route plan (Có/Không) ?</item>
+        <item>2. Tập trung làm, không dùng đt cá nhân, không ngồi (Có/Không) ?</item>
+        <item>3. Báo cáo ngay sau khi tiếp cận (Có/Không) ?</item>
+        <item>4. Đồng phục (Tốt/Không) ?</item>
+        <item>5. Trang điểm (Tốt/Không) ?</item>
+        <item>6. Tinh thần (Tốt/Không) ?</item>
+        <item>7. Tác phong (Tốt/Không) ?</item>
+        <item>8. Kiến thức sản phẩm và chương trình (Tốt/Không) ?</item>
+        <item>9. Chủ động tiếp cận khách hàng (Có/Không) ?</item>
+        <item>10. Tiếp xúc đúng đối tượng (Có/Không) ?</item>
+        <item>11. Sử dụng thiết bị hỗ trợ thuần thục (Có/Không) ?</item>
+        <item>12. Nhận xét của chủ điểm bán về PST (Tốt/Không) ?</item>
+        <item>13. Nhận biết của chủ điểm bán về chương trình (Có/Không) ?</item>
+        <item>14. Nhận biết của người hút về Brand message (Có/Không) ?</item>
+        <item>15. Nhận biết của người hút về chương trình (Có/Không) ?</item>
+    </string-array>
+    <string-array name="product_list">
+        <item>7D</item>
+        <item>CADS</item>
+        <item>555</item>
+        <item>White Horse</item>
+        <item>Chọn nhãn hàng&#8230;</item>
+    </string-array>
+    <string-array name="customer_amount">
+        <item>Dưới 10 khách</item>
+        <item>Từ 11 đến 30 khách</item>
+        <item>Tử 31 đến 50 khách</item>
+        <item>Trên 50 khách</item>
+        <item>Dưới 10 khách</item>
+    </string-array>
+
+    <string-array name="remove_outlet_reasons">
+        <item>Quán có ít smoker</item>
+        <item>Quán ngưng kinh doanh(giải thể)</item>
+        <item>Quán dời địa điểm</item>
+        <item>Quán đóng cửa tạm thời</item>
+        <item>Chủ quán từ chối PST</item>
+        <item>Quán có ít smoker</item>
+    </string-array>
+
+    <string-array name="refuse_PST_reasons">
+        <item>Chưa trả phí</item>
+        <item>Đã ký độc quyền với đối thủ</item>
+        <item>Chính quyền gây khó dễ, Outlet không dám tiếp tục</item>
+        <item>Chưa có TE đến deal với outlet</item>
+        <item>Chưa trả phí</item>
+    </string-array>
+
+    <string-array name="hour_list">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="min_list">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+</resources>

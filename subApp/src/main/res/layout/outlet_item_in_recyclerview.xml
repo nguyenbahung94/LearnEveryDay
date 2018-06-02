@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/itemParentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_small"
+            android:textStyle="bold"
+            app:srcCompat="@drawable/ic_location" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/outletName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                tools:text="(07:00-10:00)Cafe Vip" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/outletAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outletName"
+                android:textColor="@color/outlet_detail_color"
+                tools:text="73 Mac Thi Buoi" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/BrownSeparateLine"
+        android:layout_width="match_parent"
+        android:layout_below="@id/itemParentView">
+
+    </FrameLayout>
+
+</RelativeLayout>

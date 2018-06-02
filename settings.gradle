@@ -1,0 +1,2 @@
+include ':app', ':demoApp', ':butterknife', ':customrecyclerview', ':databinding', ':RuntimePermissions', ':myAppToLearn', ':designpattern',':dragger2',':effectivejava',':java8',':rxjava',
+        ':subApp',':takeapictureandroid8',':exampleViewModel'

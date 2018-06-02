@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/red_button_shape"
+        android:padding="@dimen/padding_small"
+        android:text="@string/btn_complete_text" />
+
+    <FrameLayout
+        android:id="@+id/thirdLine"
+        style="@style/RedSeparateLineStyle"
+        android:layout_width="match_parent"
+        android:layout_above="@id/btnComplete"
+        android:layout_marginTop="@dimen/margin_small" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/thirdLine"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvOutletName"
+                style="@style/OutletTextViewStyle"
+                android:layout_alignTop="@+id/outletName"
+                android:text="@string/tv_owner_name" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtOutletName"
+                style="@style/OutletRedTextViewStyle"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/tvOutletName"
+                android:layout_toRightOf="@id/tvOutletName" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvOutletNumber"
+                style="@style/OutletTextViewStyle"
+                android:layout_below="@id/tvOutletName"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/tv_onwer_number" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtOutletNumber"
+                style="@style/OutletRedTextViewStyle"
+                android:layout_below="@id/edtOutletName"
+                android:layout_toEndOf="@id/tvOutletNumber"
+                android:layout_toRightOf="@id/tvOutletNumber"
+                android:inputType="number"/>
+
+            <FrameLayout
+                android:id="@+id/firstLine"
+                style="@style/RedSeparateLineStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@id/edtOutletNumber"
+                android:layout_marginTop="@dimen/margin_small" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvOutletStatus"
+                style="@style/OutletSectionHeaderTViewStyle"
+                android:layout_below="@id/firstLine"
+                android:text="@string/tv_out_let_status" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCustomerAmount"
+                style="@style/LargeOutletTextViewStyle"
+                android:layout_below="@id/tvOutletStatus"
+                android:text="@string/tv_customer_amount" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerCustomerAmount"
+                style="@style/OutletNormalSpinnerStyle"
+                android:layout_below="@id/tvOutletStatus"
+                android:layout_toEndOf="@id/tvCustomerAmount"
+                android:layout_toRightOf="@id/tvCustomerAmount" />
+
+            <FrameLayout
+                android:id="@+id/secondLine"
+                style="@style/RedSeparateLineStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@id/spinnerCustomerAmount"
+                android:layout_marginTop="@dimen/margin_small" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvRequestChangeOutlet"
+                style="@style/OutletSectionHeaderTViewStyle"
+                android:layout_below="@id/secondLine"
+                android:text="@string/tv_change_time_request" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkboxRemoveOutlet"
+                style="@style/OutletCheckboxStyle"
+                android:layout_below="@id/tvRequestChangeOutlet"
+                android:text="@string/checkbox_remove_outlet" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerRemoveOutlet"
+                style="@style/OutletLargeSpinnerStyle"
+                android:layout_below="@id/checkboxRemoveOutlet" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerRefusePSTReasons"
+                style="@style/OutletLargeSpinnerStyle"
+                android:layout_below="@id/spinnerRemoveOutlet"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkboxChangeTime"
+                style="@style/OutletCheckboxStyle"
+                android:layout_below="@id/spinnerRefusePSTReasons"
+                android:text="@string/checkbox_change_time" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvFrom"
+                style="@style/SmallOutletTextViewStyle"
+                android:layout_below="@id/checkboxChangeTime"
+                android:text="@string/tv_from" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerFromHour"
+                style="@style/OutletSmallSpinnerStyle"
+                android:layout_below="@id/checkboxChangeTime"
+                android:layout_toEndOf="@id/tvFrom"
+                android:layout_toRightOf="@id/tvFrom" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvFromHour"
+                style="@style/SmallOutletTextViewStyle"
+                android:layout_below="@id/checkboxChangeTime"
+                android:layout_toEndOf="@id/spinnerFromHour"
+                android:layout_toRightOf="@id/spinnerFromHour"
+                android:text="@string/tv_hour" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerFromMins"
+                style="@style/OutletSmallSpinnerStyle"
+                android:layout_below="@id/checkboxChangeTime"
+                android:layout_toEndOf="@id/tvFromHour"
+                android:layout_toRightOf="@id/tvFromHour" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTo"
+                style="@style/SmallOutletTextViewStyle"
+                android:layout_below="@+id/tvFrom"
+                android:text="@string/tv_to" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerToHour"
+                style="@style/OutletSmallSpinnerStyle"
+                android:layout_below="@+id/tvFrom"
+                android:layout_toEndOf="@id/tvTo"
+                android:layout_toRightOf="@id/tvTo" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvToHour"
+                style="@style/SmallOutletTextViewStyle"
+                android:layout_below="@+id/tvFrom"
+                android:layout_toEndOf="@id/spinnerToHour"
+                android:layout_toRightOf="@id/spinnerToHour"
+                android:text="@string/tv_hour" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerToMins"
+                style="@style/OutletSmallSpinnerStyle"
+                android:layout_below="@+id/tvFrom"
+                android:layout_toEndOf="@id/tvToHour"
+                android:layout_toRightOf="@id/tvToHour" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

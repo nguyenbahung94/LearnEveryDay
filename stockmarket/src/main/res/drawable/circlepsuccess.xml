@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="2dp"
+                android:color="#eded17"/>
+            <solid android:color="#0ee2f5"/>
+            <size
+                android:width="40dp"
+                android:height="40dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="oval">
+            <!-- transparent stroke = larger_circle_size - smaller_circle_size -->
+            <stroke android:color="@android:color/transparent"
+                android:width="8dp"/>
+            <solid android:color="#f2e306"/>
+            <size
+                android:width="35dp"
+                android:height="35dp"/>
+        </shape>
+    </item>
+</layer-list>

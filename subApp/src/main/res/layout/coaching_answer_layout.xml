@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnBad"
+        android:layout_width="@dimen/small_button_size"
+        android:layout_height="@dimen/small_button_size"
+        android:layout_margin="@dimen/margin_button"
+        android:background="@drawable/red_button_shape"
+        android:text="@string/btn_bad_text" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnNormal"
+        android:layout_width="@dimen/small_button_size"
+        android:layout_height="@dimen/small_button_size"
+        android:layout_margin="@dimen/margin_button"
+        android:background="@drawable/yellow_button_shape"
+        android:text="@string/btn_normal_text" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnGood"
+        android:layout_width="@dimen/small_button_size"
+        android:layout_height="@dimen/small_button_size"
+        android:layout_margin="@dimen/margin_button"
+        android:background="@drawable/green_button_shape"
+        android:text="@string/btn_good_text" />
+</LinearLayout>

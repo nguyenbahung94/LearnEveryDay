@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bottomParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvMainScreen"
+            style="@style/BottomButtonStyle"
+            android:text="@string/text_main_screen" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvLogout"
+            style="@style/BottomButtonStyle"
+            android:text="@string/text_logout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/colume1Title"
+            style="@style/ColumeTitleTViewStyle"
+            android:text="@string/title_BA" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/colume2Title"
+            style="@style/ColumeTitleTViewStyle"
+            android:text="@string/title_score" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/line"
+        style="@style/RedSeparateLineStyle"
+        android:layout_width="match_parent"
+        android:layout_below="@id/topParentLayout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commonListRView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomParentLayout"
+        android:layout_below="@id/line"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textWhite">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tvFullNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="@color/textWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarUserIamge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@id/tvFullNameUser"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/description"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_button"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:clickable="false"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/login" />
+
+        <Button
+            android:clickable="false"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:background="@null"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/textBlack"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutcontentlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/edit" />
+
+            <Button
+                android:id="@+id/btn_editaccount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginStart="56dp"
+                android:background="@drawable/bg_button"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="@string/edit"
+                android:textAllCaps="false"
+                android:textColor="@color/textBlack"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/logout" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginStart="56dp"
+                android:background="@drawable/bg_button"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="@string/logout"
+                android:textAllCaps="false"
+                android:textColor="@color/textBlack"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btn_login"
+        android:background="@color/textBlack" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutcontentlogout"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

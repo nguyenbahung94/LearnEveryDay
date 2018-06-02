@@ -1,0 +1,96 @@
+<resources>
+
+    <style name="RedSeparateLineStyle">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+    </style>
+
+    <style name="BrownSeparateLine">
+        <item name="android:background">@color/light_gray_opa_40</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+    </style>
+
+    <style name="OutletTextViewStyle">
+        <item name="android:layout_width">@dimen/outlet_xsmall_width</item>
+        <item name="android:layout_height">@dimen/standard_button_size</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="OutletLargeSpinnerStyle" parent="OutletSpinnerStyle">
+        <item name="android:layout_width">@dimen/outlet_large_width</item>
+        <item name="android:layout_height">@dimen/standard_button_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+    </style>
+
+    <style name="OutletNormalSpinnerStyle" parent="OutletSpinnerStyle">
+        <item name="android:layout_width">@dimen/outlet_normal_width</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_height">@dimen/standard_button_size</item>
+    </style>
+
+    <style name="OutletSectionHeaderTViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LargeOutletTextViewStyle">
+        <item name="android:layout_width">@dimen/outlet_small_width</item>
+        <item name="android:layout_height">@dimen/standard_button_size</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="OutletSmallSpinnerStyle" parent="OutletSpinnerStyle">
+        <item name="android:layout_width">@dimen/outlet_xxsmall_width</item>
+        <item name="android:layout_height">@dimen/standard_button_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+    </style>
+
+    <style name="SmallOutletTextViewStyle">
+        <item name="android:layout_width">@dimen/outlet_xxxsmall_width</item>
+        <item name="android:layout_height">@dimen/standard_button_size</item>
+        <item name="android:layout_marginStart">@dimen/margin_xlarge</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="OutletCheckboxStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+    </style>
+
+    <style name="FeatureButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/large_button_size</item>
+        <item name="android:layout_marginStart">@dimen/margin_normal</item>
+        <item name="android:layout_marginEnd">@dimen/margin_normal</item>
+        <item name="android:textColor">@color/semi_red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

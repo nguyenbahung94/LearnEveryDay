@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">SupApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_retry">Retry</string>
+    <string name="title_gold_price_activity">RTH Gold Price</string>
+    <string name="temporary_date">21</string>
+    <string name="temporary_month_year">June 2016</string>
+    <string name="temporary_weekday">Thursday</string>
+    <string name="title_home">Home page</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notification</string>
+    <string name="prefix_exception">Có lỗi xảy ra:</string>
+    <!--Login screen-->
+    <string name="title_supervisor_login">SUPERVISOR LOGIN</string>
+    <string name="pickup_product">Chọn nhãn hàng&#8230;</string>
+    <string name="mobile_or_email">Số điện thoại hoặc email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="hotline">1800 1740</string>
+    <string name="forgot_password">Quên mật khẩu? Gọi HOTLINE</string>
+    <string name="login_btn_text">Login</string>
+    <!--change password screen-->
+    <string name="hint_new_password">Mật khẩu mới</string>
+    <string name="hint_retype_new_password">Nhập lại mật khẩu mới</string>
+    <!--features screen-->
+    <string name="text_checking">Checking</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_main_screen">Main Screen</string>
+    <string name="text_coaching">Coaching</string>
+    <!--common list screen-->
+    <string name="title_day_sort">Xem theo ngày</string>
+    <string name="title_week_sort">Xem theo tuần</string>
+    <string name="title_BA">Tên BA</string>
+    <string name="title_score">Điểm(số lần)</string>
+    <string name="title_scoring_times">Số lần đánh giá</string>
+    <string name="title_sup_test">SUP TEST-</string>
+    <string name="common_list_pst_title">SUP TEST-Supervisor&#32;</string>
+    <string name="common_list_outlet_title">SUP TEST-Danh sách cửa hàng</string>
+    <string name="prepare_title">SUP TEST-Chuẩn bị</string>
+    <string name="reach_customer_title">SUP TEST-Tiếp cận khách hàng</string>
+    <string name="introduce_product_title">SUP TEST-Giới thiệu sản phẩm</string>
+    <string name="selling_process_title">SUP TEST-Quy trình bán hàng</string>
+    <string name="evaluate_title">SUP TEST-Đánh giá</string>
+    <!--action picker dialog-->
+    <string name="scoring">Chấm điểm</string>
+    <string name="day_report_scoring">Xem điểm hôm nay</string>
+    <string name="view_report">Xem report</string>
+    <string name="edit_outlet">Sửa Outlet</string>
+    <string name="back">Quay lại</string>
+    <!--marking screen-->
+    <string name="suggestion_text">Ý KIẾN TỔNG QUAN</string>
+    <!--scoring screen-->
+    <string name="btn_next_text">TIẾP THEO</string>
+    <string name="btn_done_review">OK</string>
+    <string name="btn_back_text">TRỞ LẠI</string>
+    <string name="btn_complete_text">HOÀN THÀNH</string>
+    <string name="btn_bad_text">YẾU</string>
+    <string name="btn_normal_text">TB</string>
+    <string name="btn_good_text">TỐT</string>
+    <string name="edittext_comment_hint">GIẢI THÍCH</string>
+    <!--taking pictures screen-->
+    <string name="btn_save_text">Lưu</string>
+    <string name="btn_retry_text">Thử lại</string>
+    <!--checking answer layout-->
+    <string name="btn_yes_text">Có/Đúng</string>
+    <string name="btn_no_text">Không/Sai</string>
+    <string name="btn_na_text">N/A</string>
+    <!--permission request-->
+    <string name="turn_on_permissions">Phải bật cài đặt để cấp quyền cho ứng dụng</string>
+    <string name="permission_denied_text">Không thực hiện được thao tác. Phải cấp quyền cho ứng dụng</string>
+    <string name="yes_text">OK</string>
+    <!--review report screen -->
+    <string name="question_text">Câu hỏi</string>
+    <string name="report_screen_title">SUP TEST-Report Hồ Thị Nghĩa</string>
+    <!--edit outlet screen -->
+    <string name="tv_owner_name">Tên chủ Outlet</string>
+    <string name="edit_outlet_screen_title">Thông tin điểm bán</string>
+    <string name="tv_onwer_number">SĐT chủ Outlet</string>
+    <string name="tv_out_let_status">Tình trạng điểm bán</string>
+    <string name="tv_customer_amount">Lượng khách trong quán</string>
+    <string name="tv_change_time_request">Đề nghị(đổi giờ/bỏ điểm)</string>
+    <string name="checkbox_remove_outlet">Bỏ điểm</string>
+    <string name="hint_remove_outlet_reason">Chọn lý do&#8230;</string>
+    <string name="checkbox_change_time">Đổi giờ</string>
+    <string name="tv_from">Từ</string>
+    <string name="tv_to">Đến</string>
+    <string name="tv_hour">giờ</string>
+    <string name="tv_mins">phút</string>
+    <string name="logout_description">Bạn có muốn Logout?</string>
+    <string name="confirm_current_location">Xác định tọa độ hiện tại của bạn</string>
+    <string name="chose_outlet_prefix">Bạn có muốn vào cửa hàng&#160;</string>
+    <string name="chose_outlet_suffix">&#160;làm việc?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="ok">OK</string>
+    <string name="username_is_empty">Vui lòng nhập số điện thoại hoặc email</string>
+    <string name="password_is_empty">Vui lòng nhập mật khẩu</string>
+    <string name="product_is_invalid">Vui lòng chọn nhãn hàng</string>
+    <string name="please_fill_and_explain_all_answer">Vui lòng trả lời tất cả các câu hỏi và giải thích nếu bạn lựa chọn "Yếu" hoặc "TB"</string>
+    <!--loading-->
+    <string name="loading_get_brand_list">Đang lấy danh sách nhãn hiệu&#8230;</string>
+    <string name="loading_get_data">Đang lấy dữ liệu&#8230;</string>
+    <string name="loading_get_questions">Đang lấy danh sách câu hỏi&#8230;</string>
+    <string name="loading_in_progress">Đang xử lý&#8230;</string>
+    <!--error-->
+    <string name="error_request_brand_list">Lỗi. Không lấy được danh sách nhãn hiệu.</string>
+    <string name="error_response_brand_list">Lỗi. Không lấy được danh sách nhãn hiệu.</string>
+    <string name="error_login_response_faile">Đăng nhập không thành công. Vui lòng kiểm tra lại email/SĐT và mật khẩu.</string>
+    <string name="error_login_request">Yêu cầu đăng nhập không thành công.</string>
+    <string name="error_request_coaching_pst_list">Có lỗi. Không thể lấy danh sách các PST.</string>
+    <string name="error_response_coaching_pst_list">Có lỗi. Không thể lấy danh sách các PST.</string>
+    <string name="error_request_checking_pst_list">Có lỗi. Không thể lấy danh sách các PST.</string>
+    <string name="error_response_checking_pst_list">Có lỗi. Không thể lấy danh sách các PST.</string>
+    <string name="error_request_outlet_list">Có lỗi. Không thể lấy danh sách các outlet.</string>
+    <string name="error_response_outlet_list">Có lỗi. Không thể lấy danh sách các outlet.</string>
+    <string name="error_empty_outlet_list">Hiện tại không có outlet nào.</string>
+    <string name="error_request_coaching_questions">Không thể lấy được danh sách câu hỏi.</string>
+    <string name="error_response_coaching_questions">Không lấy được danh sách các câu hỏi.</string>
+    <string name="error_request_post_marking">Không gửi được kết quả bài test lên server.</string>
+    <string name="error_response_post_coaching">Gửi kết quả bài test không thành công.</string>
+    <string name="error_request_post_coaching_miss_field">Gửi kết quả về server không thành công.</string>
+    <string name="error_request_post_coaching_miss_answer">Gửi kết quả về server không thành công.</string>
+    <string name="error_response_post_checking">Gửi kết quả bài test không thành công.</string>
+    <string name="error_request_post_checking_miss_field">Gửi kết quả bài test không thành công.</string>
+    <string name="error_request_post_checking_miss_answer">Gửi kết quả bài test không thành công.</string>
+    <string name="error_request_coaching_report">Có lỗi. Không thể lấy report từ server.</string>
+    <string name="error_response_coaching_report">Có lỗi. Không thể lấy report từ server.</string>
+    <string name="error_invalid_pass_or_confirm_pass">Mật khẩu phải có đúng 6 kí tự số.</string>
+    <string name="error_pass_not_match">Mật khẩu và nhập lại mật khẩu không khớp nhau.</string>
+    <string name="error_pass_is_same_with_old_pass">Mật khẩu không được trùng với mật khẩu cũ.</string>
+    <string name="error_request_change_password">Có lỗi. Không thể gửi yêu cầu lên server.</string>
+    <string name="error_response_change_password">Có lỗi. Không thể đổi password.</string>
+    <string name="error_occured">Có lỗi xảy ra.</string>
+    <!--Notification-->
+    <string name="notify_post_coaching_sucessfully">Gửi kết quả về server thành công.</string>
+    <string name="notify_post_checking_sucessfully">Gửi kết quả về server thành công.</string>
+    <string name="notify_change_password_succesfully">Đổi mật khẩu thành công.</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/radiosWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_large">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3.0">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioBtnYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/btn_yes_text"
+                app:buttonTint="@color/semi_red"
+                />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioBtnNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/btn_no_text"
+                app:buttonTint="@color/semi_red" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radioBtnNA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/btn_na_text"
+                app:buttonTint="@color/semi_red"/>
+        </RadioGroup>
+    </FrameLayout>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/radiosWrapper"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="3.0">-->
+    <!---->
+    <!--<FrameLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.0">-->
+
+    <!--<android.support.v7.widget.AppCompatRadioButton-->
+    <!--android:id="@+id/radioBtnYes"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/btn_yes_text"-->
+    <!--android:textAlignment="center"-->
+    <!--app:buttonTint="@color/semi_red" />-->
+    <!--</FrameLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.0">-->
+
+    <!--<android.support.v7.widget.AppCompatRadioButton-->
+    <!--android:id="@+id/radioBtnNo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/btn_no_text"-->
+    <!--android:textAlignment="center"-->
+    <!--app:buttonTint="@color/semi_red" />-->
+    <!--</FrameLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/naWrapper"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.0">-->
+
+    <!--<android.support.v7.widget.AppCompatRadioButton-->
+    <!--android:id="@+id/radioBtnNA"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/btn_na_text"-->
+    <!--android:textAlignment="center"-->
+    <!--app:buttonTint="@color/semi_red" />-->
+    <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+    <!--<android.support.v7.widget.AppCompatEditText-->
+        <!--android:id="@+id/checkingEdtComment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/radiosWrapper"-->
+        <!--android:hint="@string/edittext_comment_hint"-->
+        <!--android:visibility="gone" />-->
+</RelativeLayout>

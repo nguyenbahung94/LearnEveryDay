@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@drawable/background" />
+
+    <RelativeLayout
+        android:id="@+id/ll_imageofregister"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_show_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="0 %"
+            android:textColor="#e6f150"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_show_percent"
+            android:layout_centerHorizontal="true"
+            android:text="completed"
+            android:textColor="#07f1f1"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_imageofregister">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister1"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="1dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="51dp"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="46dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical"
+                android:visibility="visible" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/updateprofile"
+                    android:textColor="@color/textWhite"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_descriptionprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_profile"
+                    android:gravity="center"
+                    android:text="photo,nick name"
+                    android:textColor="@color/textWhite"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:background="@drawable/circlepress"
+                    android:contentDescription="@string/description" />
+
+                <View
+                    android:id="@+id/viewregisterprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+                    android:background="@drawable/view" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister2"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="1dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister1"
+                android:layout_marginLeft="51dp"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="46dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister1"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="PERSONAL INFORMATION"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:id="@+id/tv_descriptionInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_information"
+                    android:gravity="center"
+                    android:text="@string/description" />
+
+                <ImageView
+                    android:id="@+id/img_information"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:background="@drawable/circledefault"
+                    android:contentDescription="@string/description"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewregisterInfor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+                    android:background="@drawable/view" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister3"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="1dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister2"
+                android:layout_marginLeft="51dp"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="46dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister2"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_readlicence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/readlincence"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:id="@+id/tv_descriptionLicence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_readlicence"
+                    android:gravity="center"
+                    android:text="@string/description" />
+
+                <ImageView
+                    android:id="@+id/img_readlicence"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:background="@drawable/circledefault"
+                    android:contentDescription="@string/description"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewregisterlicence"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+                    android:background="@drawable/view" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister3"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_completedRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/compeletedregister"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:id="@+id/tv_descriptionComplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_completedRegister"
+                    android:gravity="center"
+                    android:text="@string/description" />
+
+                <ImageView
+                    android:id="@+id/img_CompletedRegister"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:background="@drawable/circledefault"
+                    android:contentDescription="@string/description"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/viewregisterCompleted"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+                    android:background="@drawable/view" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

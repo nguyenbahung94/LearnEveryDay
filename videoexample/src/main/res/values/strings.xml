@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">VideoTraining</string>
+    <string name="action_settings">Setting</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_videos">List Video</string>
+    <string name="nav_item_download">List Download</string>
+    <string name="nav_item_video">Video</string>
+
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_videos</item>
+        <item>@string/nav_item_download</item>
+        <item>@string/nav_item_video</item>
+    </string-array>
+
+    <string name="title_videos">List Video</string>
+    <string name="title_download">List Download</string>
+    <string name="title_video">Video</string>
+
+    <string name="desc">image</string>
+    <string name="description">Description</string>
+    <string name="play">Play</string>
+    <string name="download">DownLoad</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Pause</string>
+    <string name="cancel">Resume</string>
+    <string name="nickname">Nickname</string>
+    <string name="name">Name</string>
+    <string name="pass">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">LOGOUT</string>
+    <string name="video">VIDEO</string>
+    <string name="done">Done!</string>
+    <string name="dơwnload">Downloading.......</string>
+    <string name="wait">waiting......</string>
+    <string name="textunderline"><u>Register Account..</u></string>
+    <string name="updateprofile">UPDATE PROFILE</string>
+    <string name="personalinformation">PERSONAL INFOMATION</string>
+    <string name="readlincence">READ LINCENCE</string>
+    <string name="compeletedregister">Completed Register</string>
+    <string name="fragmentinfor">FragmentInfor</string>
+    <string name="fragmentlincence">FragmentLincence</string>
+    <string name="save">Save</string>
+
+    <string name="about_company"><![CDATA[\tFor over 30 years, Alshaya has been a pioneering force in the
+    retail franchise sector, using our exceptional market knowledge and experience to grow at pace across
+    MENA, Russia, Turkey, Europe and beyond. \n\n\tWe franchise more than 80 of the world\'s best-known retail
+    brands – including Starbucks, H&M, Mothercare, Debenhams, American Eagle Outfitters, P.F. Chang\'s,
+    The Cheesecake Factory, Victoria\'s Secret, Boots, Pottery Barn and KidZania - in prime locations
+    across our markets. Our ambition is to be a world-leading retailer, and our multi-brand, multi-market
+    franchise portfolio delivers a truly international shopping experience across a range of sectors that
+    is unmatched: Fashion & Footwear, Food, Health & Beauty, Pharmacy, Optics, Home Furnishings and Leisure
+    & Entertainment. \n\n\tWe are committed to delivering new brands and new retail platforms as part of our
+    commitment to offer innovative retail experiences that keep customers returning to our stores.
+    Foresight, energy and a passion to be the best drive us to explore new opportunities and to build
+    strong and effective business partnerships built on trust, integrity and mutual benefit. We are
+    proud of the retail expertise that exists within Alshaya, and work hard to build and maintain a
+    reputation as \'Employer of Choice\'.]]></string>
+    <string name="objective_complete">Objective Complete</string>
+    <string name="telstra_our_company">Telstra: Our Company</string>
+</resources>

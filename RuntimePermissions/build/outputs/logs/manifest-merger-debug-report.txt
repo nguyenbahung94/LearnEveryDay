@@ -1,0 +1,102 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:17:1-48:12
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\5adabcef616bf0b0260389a4331fa463\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\57516b93cb4f9c92c444239decfdb70e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\1525973fa51e3d43cb9988ccc04b9957\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\aeab3a79612f1cffc0d92f4687bc9c21\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\12945cb5e19c232efa56238e428da303\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\811d691d9a859c8fee68db58a517aee9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\69ecfd2f60fe7d621ae8de212da9b5c7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\f977a61cfd7eee818975220505a87213\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\171a4cbef306465b74f42b5e47dfab60\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\72672fd0e75e3f8ad3f28e199ddea568\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\973f4e24f0cefc7e09bb7b3c1621ecd4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\d4375d290942d5523a2ffe2551a893f5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\57cf45e07d4186c49183bbaa3242fe1a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\0cc42e2b08a428cfc3e1d693942a6580\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\e22fa1f099704956f7928a1f0b330db2\AndroidManifest.xml:17:1-24:12
+	package
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:18:11-57
+	xmlns:android
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:17:11-69
+uses-permission#android.permission.CAMERA
+ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:24:5-64
+	android:name
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:24:22-62
+application
+ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:27:5-46:19
+	android:label
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:30:13-45
+	android:icon
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:29:13-47
+	android:allowBackup
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:28:13-39
+	android:theme
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:31:13-57
+activity#com.example.android.basicpermissions.MainActivity
+ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:32:9-39:20
+	android:label
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:34:17-49
+	android:name
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:33:17-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:35:13-38:29
+action#android.intent.action.MAIN
+ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:36:17-68
+	android:name
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:37:17-76
+	android:name
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:37:27-74
+activity#com.example.android.basicpermissions.camera.CameraPreviewActivity
+ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:42:9-44:43
+	android:exported
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:44:17-41
+	android:name
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml:43:17-61
+uses-sdk
+INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\5adabcef616bf0b0260389a4331fa463\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\5adabcef616bf0b0260389a4331fa463\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\57516b93cb4f9c92c444239decfdb70e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\57516b93cb4f9c92c444239decfdb70e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\1525973fa51e3d43cb9988ccc04b9957\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\1525973fa51e3d43cb9988ccc04b9957\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\aeab3a79612f1cffc0d92f4687bc9c21\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\aeab3a79612f1cffc0d92f4687bc9c21\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\12945cb5e19c232efa56238e428da303\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\12945cb5e19c232efa56238e428da303\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\811d691d9a859c8fee68db58a517aee9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\811d691d9a859c8fee68db58a517aee9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\69ecfd2f60fe7d621ae8de212da9b5c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\69ecfd2f60fe7d621ae8de212da9b5c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\f977a61cfd7eee818975220505a87213\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\f977a61cfd7eee818975220505a87213\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\171a4cbef306465b74f42b5e47dfab60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\171a4cbef306465b74f42b5e47dfab60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\72672fd0e75e3f8ad3f28e199ddea568\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\72672fd0e75e3f8ad3f28e199ddea568\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\973f4e24f0cefc7e09bb7b3c1621ecd4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\973f4e24f0cefc7e09bb7b3c1621ecd4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\d4375d290942d5523a2ffe2551a893f5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\d4375d290942d5523a2ffe2551a893f5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\57cf45e07d4186c49183bbaa3242fe1a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\57cf45e07d4186c49183bbaa3242fe1a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\0cc42e2b08a428cfc3e1d693942a6580\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\0cc42e2b08a428cfc3e1d693942a6580\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\e22fa1f099704956f7928a1f0b330db2\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Billy\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\e22fa1f099704956f7928a1f0b330db2\AndroidManifest.xml:20:5-22:41
+INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+		ADDED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\clone\learnAndroidEveryday\LearnEveryDay\RuntimePermissions\src\main\AndroidManifest.xml

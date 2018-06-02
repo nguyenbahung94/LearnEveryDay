@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentLayout">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="question content?" />
+
+        <include
+            android:id="@+id/coachingAnswerWrapper"
+            layout="@layout/coaching_answer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQuestion"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/coachingResultWrapper"
+            layout="@layout/coaching_result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQuestion"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/checkingAnswerWrapper"
+            layout="@layout/checking_answer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQuestion"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coachingAnswerWrapper"
+            android:hint="@string/edittext_comment_hint"
+            android:visibility="gone" />
+    </RelativeLayout>
+</merge>
