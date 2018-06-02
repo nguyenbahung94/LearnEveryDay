@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_account_settings"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_account_settings"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_90dp"
+                android:layout_height="@dimen/height_90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/txt_content_description" />
+
+                <ImageButton
+                    android:id="@+id/btnChangePhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:alpha="0.6"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/txt_content_description"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_svg_camera" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:text="@string/account_setting_email"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_size_normal_2"
+                    android:textStyle="bold" />
+
+                <com.ekakashi.greenhouse.features.recipe.add_field_greenhouse.AlphaTextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/padding_15dp"
+                    android:paddingLeft="@dimen/padding_15dp"
+                    android:paddingRight="@dimen/padding_15dp"
+                    android:paddingStart="@dimen/padding_15dp"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:text="@string/account_setting_firstname"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_size_normal_2"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/ed_full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:layout_toLeftOf="@+id/clear_first_name"
+                        android:layout_toStartOf="@+id/clear_first_name"
+                        android:background="#00000000"
+                        android:inputType="text"
+                        android:textColor="@color/bold_text_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <ImageButton
+                        android:id="@+id/clear_first_name"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/txt_content_description"
+                        app:srcCompat="@drawable/ic_svg_delete_12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:text="@string/account_setting_nickname"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_size_normal_2"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/ed_nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:layout_toLeftOf="@+id/clear_nick_name"
+                        android:layout_toStartOf="@+id/clear_nick_name"
+                        android:background="#00000000"
+                        android:inputType="text"
+                        android:textColor="@color/bold_text_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <ImageButton
+                        android:id="@+id/clear_nick_name"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/txt_content_description"
+                        app:srcCompat="@drawable/ic_svg_delete_12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:text="@string/account_setting_lastname"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_size_normal_2"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:layout_toLeftOf="@+id/clear_last_name"
+                        android:layout_toStartOf="@+id/clear_last_name"
+                        android:background="#00000000"
+                        android:inputType="text"
+                        android:textColor="@color/bold_text_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <Button
+                        android:id="@+id/clear_last_name"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/clear_text_btn"
+                        android:drawableStart="@drawable/clear_text_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:text="@string/account_setting_myweb"
+                    android:textColor="@color/bold_text_color"
+                    android:textSize="@dimen/text_size_normal_2"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_marginBottom="@dimen/margin_35dp"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/ed_my_web"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:layout_toLeftOf="@+id/clear_my_web"
+                        android:layout_toStartOf="@+id/clear_my_web"
+                        android:background="#00000000"
+                        android:inputType="text"
+                        android:textColor="@color/bold_text_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <Button
+                        android:id="@+id/clear_my_web"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/clear_text_btn"
+                        android:drawableStart="@drawable/clear_text_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

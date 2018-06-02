@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_150dp"
+    android:layout_height="@dimen/height_150dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tvName"
+        android:layout_marginTop="@dimen/margin_10dp">
+
+        <ImageView
+            android:src="@drawable/icon_wind_direction"
+            android:id="@+id/imvWeather"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_35dp"
+            android:contentDescription="@string/description" />
+
+        <TextView
+            android:id="@+id/currentWindDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imvWeather"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:layout_toEndOf="@+id/imvWeather"
+            android:layout_toRightOf="@+id/imvWeather"
+            android:gravity="top"
+            android:text="@string/txt_east_northeast"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_14sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tv_graph_title"
+        android:gravity="center"
+        android:textColor="@color/tv_white"
+        android:textSize="@dimen/tv_size_14sp" />
+</RelativeLayout>

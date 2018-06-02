@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="@dimen/margin_4dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/reorder_stage_width21dp"
+        android:layout_height="@dimen/reorder_stage_height21dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:contentDescription="@string/txt_content_description"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_svg_ban"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tvAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imgDelete"
+        android:layout_toRightOf="@+id/imgDelete"
+        android:textColor="@color/tv_black"
+        android:textSize="@dimen/add_rule_text_size_15sp"
+        tools:text="Action 1" />
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAction"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:textColor="@color/bold_text_color"
+        android:layout_toEndOf="@+id/imgDelete"
+        android:layout_toRightOf="@+id/imgDelete"
+        android:textSize="@dimen/tv_size_13sp"
+        tools:text="Advise description here" />
+
+
+</RelativeLayout>

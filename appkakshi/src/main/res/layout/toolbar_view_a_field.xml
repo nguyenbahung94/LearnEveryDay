@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/background_toolbar"
+    android:contentInsetEnd="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/icon_21dp"
+            android:layout_height="@dimen/icon_21dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:contentDescription="@string/txt_content_description"
+            android:scaleType="center"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_svg_add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_45dp"
+            android:layout_marginRight="@dimen/margin_45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="@null"
+                android:id="@+id/tvTitleMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_tv_ffff"
+                android:textSize="@dimen/tv_size_17sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/llTapToChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:id="@+id/tvTapToChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:text="@string/txt_field_change"
+                    android:textColor="@color/color_tv_ffff"
+                    android:textSize="@dimen/tv_13sp_view_afield" />
+
+                <ImageView
+                    android:id="@+id/imvTapToChange"
+                    android:layout_width="@dimen/icon_small_13dp"
+                    android:layout_height="@dimen/icon_small_13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/tvTapToChange"
+                    android:layout_toRightOf="@id/tvTapToChange"
+                    android:contentDescription="@string/description"
+                    android:paddingTop="@dimen/margin_2dp"
+                    app:srcCompat="@drawable/ic_svg_drop_down" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imvRight"
+            android:layout_width="@dimen/height_35dp"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:contentDescription="@string/txt_content_description"
+            android:scaleType="center"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_svg_information" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

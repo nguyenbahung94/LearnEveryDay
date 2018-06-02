@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="5dp" />
+    <gradient
+        android:endColor="@color/tv_color_bd"
+        android:startColor="@color/tv_color_bd" />
+</shape>

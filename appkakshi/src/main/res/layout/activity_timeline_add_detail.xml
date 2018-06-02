@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_35dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:background="@color/background_divider" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTargetCrop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp">
+
+            <ImageView
+                android:id="@+id/imgTargetCrop"
+                android:layout_width="@dimen/width_20dp"
+                android:layout_height="@dimen/width_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:src="@drawable/ic_uncheck"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_50dp"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:text="@string/timeline_target_crop" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:background="@color/background_divider" />
+
+        <RelativeLayout
+            android:id="@+id/layoutWorkType"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp">
+
+            <ImageView
+                android:id="@+id/imgWorkType"
+                android:layout_width="@dimen/width_20dp"
+                android:layout_height="@dimen/width_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:src="@drawable/ic_uncheck"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_50dp"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:text="@string/timeline_work_type" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:background="@color/background_divider" />
+
+        <RelativeLayout
+            android:id="@+id/layoutDisease"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp">
+
+            <ImageView
+                android:id="@+id/imgDisease"
+                android:layout_width="@dimen/width_20dp"
+                android:layout_height="@dimen/width_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:contentDescription="@string/txt_content_description"
+                android:src="@drawable/ic_uncheck"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_50dp"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:text="@string/timeline_disease" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:background="@color/background_divider" />
+
+        <RelativeLayout
+            android:id="@+id/layoutPesticide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp">
+
+            <ImageView
+                android:id="@+id/imgPesticide"
+                android:layout_width="@dimen/width_20dp"
+                android:layout_height="@dimen/width_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/ic_uncheck"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_50dp"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:text="@string/timeline_pesticide" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:background="@color/background_divider" />
+
+        <RelativeLayout
+            android:id="@+id/layoutFertilizer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp">
+
+            <ImageView
+                android:id="@+id/imgFertilizer"
+                android:layout_width="@dimen/width_20dp"
+                android:layout_height="@dimen/width_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/ic_uncheck"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_50dp"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:text="@string/timeline_fertilizer" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:background="@color/background_divider" />
+
+        <RelativeLayout
+            android:id="@+id/layoutDateSpecification"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp">
+
+            <ImageView
+                android:id="@+id/imgDateSpecification"
+                android:layout_width="@dimen/width_20dp"
+                android:layout_height="@dimen/width_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/ic_uncheck"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_50dp"
+                android:layout_marginStart="@dimen/margin_50dp"
+                android:text="@string/timeline_date_specification" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:background="@color/background_divider" />
+    </LinearLayout>
+
+</LinearLayout>

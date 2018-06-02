@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/rel_step_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_50dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txt_step_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_50dp"
+                android:text="@string/txt_step_top"
+                android:textSize="@dimen/tv_size_32sp" />
+
+            <TextView
+                android:textColor="#424242"
+                android:id="@+id/txt_step_mid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_step_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_50dp"
+                android:text="@string/txt_step2_mid"
+                android:textSize="@dimen/tv_size_18sp" />
+            <TextView
+                android:textColor="#424242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_step_mid1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="@string/txt_step2_mid2"
+                android:textSize="@dimen/tv_size_18sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_30dp">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_50dp"
+
+            android:id="@+id/rel_step_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 1"
+                android:textColor="@color/tv_color_bd"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:textSize="@dimen/tv_size_20sp" />
+
+            <Button
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_below="@id/tv1"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:background="@drawable/bg_button_step_disable"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:text="@string/txt_button_step1"
+                android:textAllCaps="false"
+                android:textColor="@color/tv_white"
+                android:textSize="@dimen/tv_size_17sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/llStep3"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_step_mid">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:textColor="@color/tv_color_7cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:text="STEP 2"
+                android:textSize="@dimen/tv_size_20sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:textAllCaps="false"
+                android:layout_below="@id/tv2"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:id="@+id/btnAddField"
+                android:text="@string/txt_button_step2"
+                android:textColor="@color/tv_white"
+                android:background="@drawable/bg_button_green_around"
+                android:textSize="@dimen/tv_size_17sp" />
+            <TextView
+                android:textColor="#424242"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_30dp"
+                android:id="@+id/tv_step2_bot"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:textSize="@dimen/tv_size_12sp"
+                android:layout_below="@+id/btnAddField"
+                android:text="@string/tv_step2_bot1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

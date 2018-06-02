@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/background_toolbar"
+    android:contentInsetEnd="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/icon_21dp"
+            android:layout_height="@dimen/icon_21dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:contentDescription="@string/txt_content_description"
+            app:srcCompat="@drawable/ic_back_arrow_blue"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_40dp"
+            android:layout_marginRight="@dimen/margin_40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/tvTitleMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/tv_white"
+                android:textSize="@dimen/tv_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/tvSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/tv_white"
+                android:textSize="@dimen/tv_size_11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvToolbarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="@string/txt_cancel"
+            android:textColor="@color/bg_green_btn"
+            android:textSize="@dimen/tv_size_16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imvRight"
+            android:layout_width="@dimen/icon_21dp"
+            android:layout_height="@dimen/icon_21dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:contentDescription="@string/txt_content_description"
+            android:src="@drawable/icon_add"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

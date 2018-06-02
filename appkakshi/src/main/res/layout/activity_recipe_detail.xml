@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekakashi.greenhouse.features.recipe.recipe_detail.RecipeDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvToolbarBack"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/margin_15dp"-->
+            <!--android:layout_marginStart="@dimen/margin_15dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="Cancel"-->
+            <!--android:textColor="#7fc31b"-->
+            <!--android:textSize="@dimen/tv_size_14sp"-->
+            <!--android:visibility="visible" />-->
+
+            <ImageView
+                android:contentDescription="@string/description"
+                android:id="@+id/imgToolbarBack"
+                android:layout_width="@dimen/width_21dp"
+                android:layout_height="@dimen/width_21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/icon_back"
+                tools:ignore="VectorDrawableCompat" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvToolbarCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_size_16sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvToolbarCenterBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_size_14sp" />
+            </LinearLayout>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imgToolbarMore"-->
+            <!--android:layout_width="@dimen/width_36dp"-->
+            <!--android:layout_height="@dimen/height_36dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginEnd="@dimen/margin_10dp"-->
+            <!--android:layout_marginRight="@dimen/margin_10dp"-->
+            <!--android:visibility="visible"-->
+            <!--app:srcCompat="@drawable/ic_more_horiz"-->
+            <!--tools:ignore="VectorDrawableCompat" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/btnClone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_margin="@dimen/margin_8dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/clone"-->
+            <!--android:textColor="@color/bg_green_btn"-->
+            <!--android:textSize="@dimen/tv_size_18sp"-->
+            <!--android:visibility="gone" />-->
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_8dp"
+                android:gravity="center_vertical"
+                android:text="@string/toolbar_save"
+                android:textColor="@color/bg_green_btn"
+                android:textSize="@dimen/tv_size_18sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/background_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layoutImageRecipe"
+                android:layout_width="@dimen/width_60dp"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_16dp">
+
+                <ImageView
+                    android:contentDescription="@string/description"
+                    android:id="@+id/imgRecipe"
+                    android:layout_width="@dimen/recipe_detail_width60dp"
+                    android:layout_height="@dimen/recipe_detail_height50dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avt" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imgEditImage"-->
+                <!--android:layout_width="@dimen/width_25dp"-->
+                <!--android:layout_height="@dimen/height_18dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:visibility="gone"-->
+                <!--app:srcCompat="@drawable/ic_photo_camera_black_24dp" />-->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvRecipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutImageRecipe"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/recipe_detail_text_size_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRecipeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRecipeName"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/recipe_detail_text_color"
+                android:textSize="@dimen/text_size_smaller"
+                tools:text="Let's grow delicious carrots" />
+
+            <TextView
+                android:id="@+id/basic_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRecipeDetail"
+                android:layout_margin="@dimen/margin_15dp"
+                android:text="@string/txt_basic_information"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/recipe_detail_text_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnEditBasicInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvRecipeDetail"
+                android:layout_marginEnd="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:padding="@dimen/padding_8dp"
+                android:text="@string/txt_edit"
+                android:textColor="#7fc31b"
+                android:textSize="@dimen/recipe_detail_text_size_15sp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutBasic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/basic_info"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tvNameRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_toEndOf="@+id/name"
+                    android:layout_toRightOf="@+id/name"
+                    android:gravity="end|center_vertical"
+                    android:textColor="@color/recipe_detail_text_color"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/line"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/category"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tvCategoryRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/line"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_toEndOf="@+id/category"
+                    android:layout_toRightOf="@+id/category"
+                    android:gravity="end|center_vertical"
+                    android:textColor="@color/recipe_detail_text_color"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@id/category"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/prefecture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/category"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/prefecture"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tvRefectureRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvCategoryRecipe"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_toEndOf="@+id/prefecture"
+                    android:layout_toRightOf="@+id/prefecture"
+                    android:gravity="end|center_vertical"
+                    android:textColor="@color/recipe_detail_text_color"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@id/prefecture"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/change_availability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/prefecture"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/change_availability"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tvChangeAvaibilityRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvRefectureRecipe"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_toEndOf="@+id/change_availability"
+                    android:layout_toRightOf="@+id/change_availability"
+                    android:gravity="end|center_vertical"
+                    android:textColor="@color/recipe_detail_text_color"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@id/change_availability"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/scope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/change_availability"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/scope_of_disclosure"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tvScopeRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvChangeAvaibilityRecipe"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_toEndOf="@+id/scope"
+                    android:layout_toRightOf="@+id/scope"
+                    android:gravity="end|center_vertical"
+                    android:textColor="@color/recipe_detail_text_color"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@id/scope"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/crop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/scope"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/crop"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tvCropRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvScopeRecipe"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_toEndOf="@+id/crop"
+                    android:layout_toRightOf="@+id/crop"
+                    android:gravity="end|center_vertical"
+                    android:textColor="@color/recipe_detail_text_color"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@id/crop"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/crop"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_place"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tvPlaceRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvCropRecipe"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_toEndOf="@+id/place"
+                    android:layout_toRightOf="@+id/place"
+                    android:gravity="end|center_vertical"
+                    android:textColor="@color/recipe_detail_text_color"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@id/place"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/place"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/recipe_ver"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <TextView
+                    android:id="@+id/tvVerRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvPlaceRecipe"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/recipe_detail_text_color"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp"
+                    tools:text="2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@id/version"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/version"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/author"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvVerRecipe"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp">
+
+                    <TextView
+                        android:id="@+id/tvAuthorRecipe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/text_height_normal"
+                        android:layout_toLeftOf="@+id/btnAuthor"
+                        android:layout_toStartOf="@+id/btnAuthor"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/recipe_detail_text_color"
+                        android:textSize="@dimen/recipe_detail_text_size_15sp"
+                        tools:text="PS Solution" />
+
+                    <ImageView
+                        android:contentDescription="@string/description"
+                        android:id="@+id/btnAuthor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@id/author"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_divider" />
+
+                <TextView
+                    android:id="@+id/overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_height_normal"
+                    android:layout_below="@+id/author"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/overview"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/recipe_detail_text_size_15sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_42dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/layoutAuthor"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp">
+
+                    <ImageView
+                        android:contentDescription="@string/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@+id/overview"
+                    android:background="@color/background_divider" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/stage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutBasic"
+                android:layout_margin="@dimen/margin_15dp"
+                android:text="@string/growing_stages"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/recipe_detail_text_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnEditStage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/layoutBasic"
+                android:layout_marginEnd="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:padding="@dimen/padding_8dp"
+                android:text="@string/txt_edit"
+                android:textColor="#7fc31b"
+                android:textSize="@dimen/recipe_detail_text_size_16sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:layout_above="@+id/rvStage"
+                android:background="@color/background_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvStage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stage"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:layout_below="@+id/rvStage"
+                android:layout_marginBottom="@dimen/margin_35dp"
+                android:background="@color/background_line" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--<Button-->
+    <!--android:id="@+id/btnUseRecipe"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_margin="@dimen/margin_8dp"-->
+    <!--android:background="@color/button_color"-->
+    <!--android:text="Use the recipe"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textStyle="bold"-->
+    <!--android:visibility="gone" />-->
+</RelativeLayout>

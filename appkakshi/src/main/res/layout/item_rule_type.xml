@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRuleType"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/imgChecked"
+        android:layout_width="@dimen/icon_small_14dp"
+        android:layout_height="@dimen/icon_small_14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:contentDescription="@string/txt_content_description"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_svg_check_35" />
+
+    <TextView
+        android:id="@+id/tvRuleType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_type_height42dp"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_toEndOf="@+id/imgChecked"
+        android:layout_toRightOf="@+id/imgChecked"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/tv_black"
+        tools:text="Rules for instantaneous value" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:layout_below="@+id/tvRuleType"
+        android:layout_toEndOf="@+id/imgChecked"
+        android:layout_toRightOf="@+id/imgChecked"
+        android:background="@color/background_line" />
+</RelativeLayout>

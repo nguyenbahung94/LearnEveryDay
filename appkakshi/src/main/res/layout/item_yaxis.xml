@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp">
+
+        <ImageView
+            android:id="@+id/imgYaxisDelete"
+            android:layout_width="@dimen/width_16dp"
+            android:layout_height="@dimen/height_16dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_svg_ban" />
+
+        <TextView
+            android:id="@+id/tvYaxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_toEndOf="@+id/imgYaxisDelete"
+            android:layout_toRightOf="@+id/imgYaxisDelete"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c7cc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relMeasurementInstrument"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/graph_measuring_instrument"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <TextView
+            android:id="@+id/tvMeasurementInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:layout_marginRight="@dimen/margin_40dp"
+            android:textColor="@color/tvColor_d7"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/width_16dp"
+            android:layout_height="@dimen/height_16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/ic_svg_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c7cc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relMeasurementItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/measurement_item"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <TextView
+            android:id="@+id/tvMeasurementItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:layout_marginRight="@dimen/margin_40dp"
+            android:textColor="@color/tvColor_d7"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/width_16dp"
+            android:layout_height="@dimen/height_16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/ic_svg_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c7cc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relCalculationMethod"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/graph_calculation_method"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <TextView
+            android:id="@+id/tvCalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:layout_marginRight="@dimen/margin_40dp"
+            android:textColor="@color/tvColor_d7"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/width_16dp"
+            android:layout_height="@dimen/height_16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/ic_svg_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c7cc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relAccumulation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/graph_accumulation"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchAccumulation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:theme="@style/SwitchCompatStyle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c7cc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relReferenceValue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/graph_reference_value"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <EditText
+            android:id="@+id/edReferenceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:background="@null"
+            android:inputType="numberSigned"
+            android:text="0"
+            android:textColor="@color/tvColor_d7"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c7cc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relGraphType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/graph_type"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <TextView
+            android:id="@+id/tvGraphType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:layout_marginRight="@dimen/margin_40dp"
+            android:textColor="@color/tvColor_d7"
+            android:textSize="@dimen/tv_size_14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/width_16dp"
+            android:layout_height="@dimen/height_16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/ic_svg_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c7cc" />
+    </RelativeLayout>
+
+</LinearLayout>

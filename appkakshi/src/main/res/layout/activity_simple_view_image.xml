@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekakashi.greenhouse.features.recipe.rule.add_rule.SimpleViewImageActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:contentDescription="@string/description"
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/height_60dp"
+        android:layout_height="@dimen/height_60dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_close_white_24dp" />
+
+    <ImageView
+        android:contentDescription="@string/description"
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/height_60dp"
+        android:layout_height="@dimen/height_60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_svg_delete_image" />
+
+</RelativeLayout>

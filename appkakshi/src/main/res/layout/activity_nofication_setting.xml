@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_35dp"
+        android:gravity="center_vertical"
+        android:text="@string/notification_from_timeline"
+        android:textSize="@dimen/tv_size_16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:text="@string/notification_by_someone"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/sp14" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchBySomeone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:theme="@style/SwitchCompatStyle" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:background="#d2d2d2" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:text="@string/notification_at_device"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/sp14" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchAtDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:theme="@style/SwitchCompatStyle" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_35dp"
+        android:gravity="center_vertical"
+        android:text="@string/notification_system_notification"
+        android:textSize="@dimen/tv_size_16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:text="@string/notification_new_function"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/sp14" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchNewFunctions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:theme="@style/SwitchCompatStyle" />
+    </RelativeLayout>
+</LinearLayout>

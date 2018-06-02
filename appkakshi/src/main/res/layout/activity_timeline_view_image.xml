@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/height_60dp"
+        android:layout_height="@dimen/height_60dp"
+        android:contentDescription="@string/txt_content_description"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_close_white_24dp" />
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/height_60dp"
+        android:layout_height="@dimen/height_60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/txt_content_description"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_svg_delete_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_15dp">
+
+        <RelativeLayout
+            android:id="@+id/layoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTimelineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size_14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvTimelineName"
+                android:layout_toRightOf="@+id/tvTimelineName">
+
+                <View
+                    android:id="@+id/viewCross"
+                    android:layout_width="@dimen/height_15dp"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/viewCross"
+                    android:layout_toRightOf="@+id/viewCross"
+                    android:text="@string/timeline_at"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tv_size_14sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imgLocation"
+                    android:layout_width="@dimen/height_13dp"
+                    android:layout_height="@dimen/height_13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tvAt"
+                    android:layout_toRightOf="@+id/tvAt"
+                    android:contentDescription="@string/txt_content_description"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_svg_location_timeline" />
+
+                <TextView
+                    android:id="@+id/tvTimelineField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgLocation"
+                    android:layout_toRightOf="@+id/imgLocation"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tv_size_14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTimelineTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutName"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size_14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_150dp"
+    android:layout_height="@dimen/height_150dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tvName"
+        android:layout_marginTop="@dimen/margin_10dp">
+
+        <ImageView
+            android:src="@drawable/icon_sunrise_top"
+            android:id="@+id/imvWeather"
+            android:layout_width="@dimen/width_35dp"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:contentDescription="@string/description" />
+
+        <TextView
+            android:id="@+id/currentSunrise1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_alignTop="@id/imvWeather"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_toEndOf="@id/imvWeather"
+            android:layout_toRightOf="@id/imvWeather"
+            android:gravity="center"
+            android:text="5:12"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_20sp" />
+
+        <ImageView
+            android:src="@drawable/icon_sunrise_bottom"
+            android:id="@+id/imvWeather2"
+            android:layout_width="@dimen/width_35dp"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_below="@id/imvWeather"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:contentDescription="@string/description" />
+
+        <TextView
+            android:id="@+id/currentSunrise2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_alignTop="@id/imvWeather2"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_toEndOf="@+id/imvWeather2"
+            android:layout_toRightOf="@+id/imvWeather2"
+            android:gravity="center"
+            android:text="5:12"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_20sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tv_graph_title"
+        android:gravity="center"
+        android:textColor="@color/tv_white"
+        android:textSize="@dimen/tv_size_14sp" />
+</RelativeLayout>

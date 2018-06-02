@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llAdDevice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/device_no_available"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/text_size_normal_2"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAddDevice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp100"
+                android:layout_marginRight="@dimen/dp100"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@color/bg_green_btn"
+                android:text="@string/device_add_device"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--<ImageView-->
+            <!--android:contentDescription="@string/txt_content_description"-->
+            <!--android:id="@+id/btnAddDevice2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/height_50dp"-->
+            <!--android:src="@drawable/adddevice" />-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

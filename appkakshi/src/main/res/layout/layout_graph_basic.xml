@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutGraphName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/graph_name"
+                    android:textColor="@color/tvColor44"
+                    android:textSize="@dimen/tv_size_14sp" />
+
+                <EditText
+                    android:id="@+id/edGraphName"
+                    android:layout_width="@dimen/width_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/padding_15dp"
+                    android:layout_marginRight="@dimen/padding_15dp"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/graph_tag"
+                    android:textColor="@color/tvColor44"
+                    android:textSize="@dimen/tv_size_14sp" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_toEndOf="@+id/textView"
+                    android:layout_toRightOf="@+id/textView">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/layoutTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/edAddTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/height_30dp"
+                            android:background="@drawable/layout_add_tag_round_corner"
+                            android:hint="@string/text_here"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="@dimen/padding_5dp"
+                            android:paddingEnd="@dimen/padding_10dp"
+                            android:paddingLeft="@dimen/padding_10dp"
+                            android:paddingRight="@dimen/padding_10dp"
+                            android:paddingStart="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/tvColor_d7"
+                            android:textSize="@dimen/tv_size_14sp" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/graph_period"
+                    android:textColor="@color/tvColor44"
+                    android:textSize="@dimen/tv_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tvPeriod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    android:layout_marginRight="@dimen/margin_40dp"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/width_16dp"
+                    android:layout_height="@dimen/height_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/description"
+                    app:srcCompat="@drawable/ic_svg_next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relStartDay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/graph_start_day"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tvStartDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    android:layout_marginRight="@dimen/margin_40dp"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relEndDay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/graph_end_day"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tvEndDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    android:layout_marginRight="@dimen/margin_40dp"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/graph_limit_the_display_stage"
+                    android:textColor="@color/tvColor44"
+                    android:textSize="@dimen/tv_size_14sp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchLimitStage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:checked="false"
+                    android:theme="@style/SwitchCompatStyle" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relStartStage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/graph_start_stage"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tvStartStage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    android:layout_marginRight="@dimen/margin_40dp"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relEndStage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/graph_end_stage"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tvEndStage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    android:layout_marginRight="@dimen/margin_40dp"
+                    android:textColor="@color/tvColor_d7"
+                    android:textSize="@dimen/tv_size_12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#c8c7cc" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

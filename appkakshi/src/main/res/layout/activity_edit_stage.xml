@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.ekakashi.greenhouse.features.recipe.stage.edit_stage.EditStageActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/recipeName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_stage_height58dp"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:paddingEnd="@dimen/padding_15dp"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp"
+                android:paddingStart="@dimen/padding_15dp"
+                android:text="@string/growing_stage_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_stage_text_size_15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recipeName"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/edtStageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgName"
+                    android:layout_toStartOf="@+id/imgName"
+                    android:background="@null"
+                    android:hint="@string/enter_growing_stage_name"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/padding_8dp"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/imgName"
+                    android:layout_width="@dimen/width_16dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/edtStageName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/edtStageName"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_delete_12" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/crop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_stage_height58dp"
+                android:layout_below="@+id/layoutName"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:paddingEnd="@dimen/padding_15dp"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp"
+                android:paddingStart="@dimen/padding_15dp"
+                android:text="@string/stage_description"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_stage_text_size_15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/crop"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/edtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgDescription"
+                    android:layout_toStartOf="@+id/imgDescription"
+                    android:background="@null"
+                    android:hint="@string/enter_stage_description"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/padding_8dp"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/imgDescription"
+                    android:layout_width="@dimen/width_16dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/edtDescription"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/edtDescription"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_delete_12" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rule"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_stage_height58dp"
+                android:layout_below="@+id/layoutCrop"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:paddingEnd="@dimen/padding_15dp"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp"
+                android:paddingStart="@dimen/padding_15dp"
+                android:text="@string/rules"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_stage_text_size_15sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvRule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rule" />
+
+            <RelativeLayout
+                android:id="@+id/layoutAddRule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rvRule"
+                android:layout_marginBottom="@dimen/margin_30dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:background="@color/background_layout"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_stage_height50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@drawable/bg_boder_nonconer"
+                    android:drawablePadding="@dimen/padding_30dp"
+                    android:gravity="start|center"
+                    android:paddingLeft="@dimen/padding_70dp"
+                    android:paddingStart="@dimen/padding_70dp"
+                    android:text="@string/add_rule"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_stage_text_size_14sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:layout_width="@dimen/edit_stage_width21dp"
+                    android:layout_height="@dimen/edit_stage_width21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_add_more" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

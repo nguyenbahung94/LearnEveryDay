@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.ekakashi.greenhouse.features.recipe.rule.add_rule.AddRuleActivity">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/add_rule_height55dp"
+                android:background="@color/background_color"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:paddingEnd="@dimen/padding_15dp"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp"
+                android:paddingStart="@dimen/padding_15dp"
+                android:text="@string/conditions_0_2"
+                android:textColor="@color/tv_black"
+                android:textSize="@dimen/add_rule_text_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEditCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/scrollViewCondition"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/margin_7dp"
+                android:layout_marginRight="@dimen/margin_7dp"
+                android:padding="@dimen/padding_8dp"
+                android:text="@string/txt_edit"
+                android:textColor="@color/bg_green_btn"
+                android:textSize="@dimen/add_rule_text_size_16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDoneCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/scrollViewCondition"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/margin_7dp"
+                android:layout_marginRight="@dimen/margin_7dp"
+                android:padding="@dimen/padding_8dp"
+                android:text="@string/txt_done"
+                android:textColor="@color/bg_green_btn"
+                android:textSize="@dimen/add_rule_text_size_16sp"
+                android:visibility="gone" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scrollViewCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvCondition">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/layoutCondition1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="@dimen/padding_15dp"
+                            android:visibility="gone"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:id="@+id/imgDeleteCondition1"
+                                android:layout_width="@dimen/reorder_stage_width21dp"
+                                android:layout_height="@dimen/reorder_stage_height21dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_15dp"
+                                android:layout_marginRight="@dimen/margin_15dp"
+                                android:contentDescription="@string/txt_content_description"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/ic_svg_ban"
+                                tools:ignore="VectorDrawableCompat" />
+
+                            <TextView
+                                android:id="@+id/tvConditionName1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_2dp"
+                                android:layout_toEndOf="@+id/imgDeleteCondition1"
+                                android:layout_toRightOf="@+id/imgDeleteCondition1"
+                                android:textColor="@color/tv_black"
+                                android:textSize="@dimen/add_rule_text_size_15sp"
+                                tools:text="kindheartedness's" />
+
+                            <TextView
+                                android:id="@+id/tvConditionDetail1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/bold_text_color"
+                                android:layout_below="@+id/tvConditionName1"
+                                android:layout_toEndOf="@+id/imgDeleteCondition1"
+                                android:layout_toRightOf="@+id/imgDeleteCondition1"
+                                android:textSize="@dimen/tv_size_13sp"
+                                tools:text="@string/content" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_15dp"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/btnAnd"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/height_36dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_border_corner_white"
+                                android:text="@string/and"
+                                android:textAllCaps="false"
+                                android:textColor="@color/bg_green_btn"
+                                android:textSize="@dimen/tv_size_12sp" />
+
+                            <Button
+                                android:id="@+id/btnOr"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/height_36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_border_corner_white"
+                                android:text="@string/or"
+                                android:textAllCaps="false"
+                                android:textColor="@color/bg_green_btn"
+                                android:textSize="@dimen/tv_size_12sp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutCondition2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="@dimen/padding_15dp"
+                            android:visibility="gone"
+                            tools:ignore="UselessParent">
+
+                            <ImageView
+                                android:id="@+id/imgDeleteCondition2"
+                                android:layout_width="@dimen/reorder_stage_width21dp"
+                                android:layout_height="@dimen/reorder_stage_height21dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_15dp"
+                                android:layout_marginRight="@dimen/margin_15dp"
+                                android:contentDescription="@string/txt_content_description"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/ic_svg_ban"
+                                tools:ignore="VectorDrawableCompat" />
+
+                            <TextView
+                                android:id="@+id/tvConditionName2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/imgDeleteCondition2"
+                                android:layout_toRightOf="@+id/imgDeleteCondition2"
+                                android:textColor="@color/tv_black"
+                                android:textSize="@dimen/add_rule_text_size_15sp"
+                                tools:text="kindheartedness's" />
+
+                            <TextView
+                                android:id="@+id/tvConditionDetail2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvConditionName2"
+                                android:layout_marginBottom="@dimen/margin_2dp"
+                                android:textColor="@color/bold_text_color"
+                                android:layout_toEndOf="@+id/imgDeleteCondition2"
+                                android:layout_toRightOf="@+id/imgDeleteCondition2"
+                                android:text="@string/content"
+                                android:textSize="@dimen/tv_size_13sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnAddCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llCondition"
+                        android:layout_marginTop="@dimen/margin_15dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/add_rule_height50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:background="@drawable/bg_boder_nonconer"
+                            android:drawablePadding="@dimen/padding_30dp"
+                            android:gravity="start|center"
+                            android:paddingLeft="@dimen/padding_5dp"
+                            android:paddingStart="@dimen/padding_50dp"
+                            android:text="@string/add_condition"
+                            android:textColor="#444444"
+                            android:textSize="@dimen/add_rule_text_size_14sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <ImageView
+                            android:layout_width="@dimen/add_rule_width21dp"
+                            android:layout_height="@dimen/add_rule_height21dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:layout_marginStart="@dimen/margin_10dp"
+                            android:contentDescription="@string/txt_content_description"
+                            app:srcCompat="@drawable/ic_svg_add_more" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/tvAction"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/add_rule_height55dp"
+                android:layout_below="@+id/scrollViewCondition"
+                android:background="@color/background_color"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:paddingEnd="@dimen/padding_15dp"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/padding_15dp"
+                android:paddingStart="@dimen/padding_15dp"
+                android:text="@string/actions"
+                android:textColor="@color/tv_black"
+                android:textSize="@dimen/add_rule_text_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEditAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/scrollViewAction"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/margin_7dp"
+                android:layout_marginRight="@dimen/margin_7dp"
+                android:padding="@dimen/padding_8dp"
+                android:text="@string/txt_edit"
+                android:textColor="@color/bg_green_btn"
+                android:textSize="@dimen/add_rule_text_size_16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDoneAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/scrollViewAction"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/margin_7dp"
+                android:layout_marginRight="@dimen/margin_7dp"
+                android:padding="@dimen/padding_8dp"
+                android:text="@string/txt_done"
+                android:textColor="@color/bg_green_btn"
+                android:textSize="@dimen/add_rule_text_size_16sp"
+                android:visibility="gone" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scrollViewAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAction">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvAction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_15dp"
+                        android:background="@color/background_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/btnAddAction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rvAction"
+                        android:layout_marginBottom="@dimen/margin_30dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/add_rule_height50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:background="@drawable/bg_boder_nonconer"
+                            android:drawablePadding="@dimen/padding_30dp"
+                            android:gravity="start|center"
+                            android:paddingLeft="@dimen/padding_5dp"
+                            android:paddingStart="@dimen/padding_50dp"
+                            android:text="@string/add_action"
+                            android:textColor="#444444"
+                            android:textSize="@dimen/add_rule_text_size_14sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <ImageView
+                            android:layout_width="@dimen/add_rule_width21dp"
+                            android:layout_height="@dimen/add_rule_height21dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:layout_marginStart="@dimen/margin_10dp"
+                            android:contentDescription="@string/txt_content_description"
+                            app:srcCompat="@drawable/ic_svg_add_more" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

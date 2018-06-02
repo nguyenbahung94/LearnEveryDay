@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ekakashi.greenhouse.features.devices_detail.HowToHandleActivity">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_15dp"
+                android:layout_marginStart="@dimen/padding_15dp"
+                android:text="@string/txt_call_the_manufacturer"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_5dp"
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:text="03-4444-5555"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/tv_size_16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_15dp"
+            android:layout_marginStart="@dimen/padding_15dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:text="http://e-kakashi.com/thermomater-trouble/"
+            android:textColor="@color/textcolor_blue"
+            android:textSize="@dimen/tv_size_16sp" />
+    </LinearLayout>
+</LinearLayout>

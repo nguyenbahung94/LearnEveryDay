@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "773687317031",
+    "firebase_url": "https://ericssion-7a8f0.firebaseio.com",
+    "project_id": "ericssion-7a8f0",
+    "storage_bucket": "ericssion-7a8f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773687317031:android:8ec9e92ca0be209c",
+        "android_client_info": {
+          "package_name": "com.ekakashi.greenhouse.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773687317031-gtr1521l236cgb3mkcslu2hhajfu5sk8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "773687317031-6872saf4499b6d4glq9qhm2oaejmbhgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuoHzJNLXUASuZlJCcfONSo4TEiFRTlTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

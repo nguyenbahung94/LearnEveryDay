@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_tutorial14"
+        android:layout_width="@dimen/width_150dp"
+        android:layout_height="@dimen/height_150dp"
+        android:src="@drawable/vectorsmartobject4" />
+    <TextView
+        android:id="@+id/tv_tuto_txt1"
+        android:layout_marginTop="@dimen/margin_60dp"
+        android:layout_below="@+id/img_tutorial14"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_15sp"
+        android:text="“アドバイス”を受ける"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"/>
+    <TextView
+        android:id="@+id/tv_tuto_txt2"
+        android:layout_below="@+id/tv_tuto_txt1"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_15sp"
+        android:gravity="center"
+        android:text="良い作物の育て方「レシピ」に沿って生育することで、収穫時期や異常気象をお知らせしたり、"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"/>
+    <TextView
+        android:layout_below="@+id/tv_tuto_txt2"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_15sp"
+        android:text="専門家のアドバイスを受けられる！"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"/>
+
+
+</RelativeLayout>

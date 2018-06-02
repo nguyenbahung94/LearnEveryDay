@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/icon_undo"
+    android:height="@dimen/icon_undo"
+    android:viewportHeight="64"
+    android:viewportWidth="64">
+
+    <path
+        android:fillColor="@color/bg_green_btn"
+        android:pathData="M30.9,21V8L0,30l30.9,21.2V38.4c3-0.2,19.9-0.8,31.1,17.6H64
+C64,56,66.5,21.3,30.9,21z" />
+</vector>

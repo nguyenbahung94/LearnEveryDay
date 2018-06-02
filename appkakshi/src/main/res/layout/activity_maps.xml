@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_layout">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_devices" />
+
+    <include
+        android:id="@+id/layoutContainFourStep"
+        layout="@layout/item_contain_three_steps" />
+
+    <LinearLayout
+        android:id="@+id/llBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white_f9">
+
+        <Button
+            android:id="@+id/tv_determine_the_area"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp_basic_info"
+            android:layout_margin="@dimen/margin_5dp_basic_info"
+            android:background="@drawable/bg_button_green_around"
+            android:padding="@dimen/margin_5dp"
+            android:text="@string/txt_determine_the_position"
+            android:textAllCaps="false"
+            android:textColor="@color/tv_white"
+            android:textSize="@dimen/tv_size_14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llBtn"
+        android:layout_below="@+id/layoutContainFourStep"
+        android:background="#A9A9A9">
+
+        <fragment
+            android:id="@+id/fm_google_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_25dp"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp">
+
+            <ImageView
+                android:id="@+id/imvLocation"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/description"
+                android:visibility="visible"
+                app:srcCompat="@drawable/icon_vector_location" />
+        </RelativeLayout>
+        <!--<ImageView
+            android:id="@+id/imvLocation"
+            android:layout_width="25dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/new_icon_location_svg" />-->
+
+        <TextView
+            android:id="@+id/tvNameAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_5dp"
+            android:paddingRight="@dimen/margin_5dp"
+            android:paddingStart="@dimen/margin_5dp"
+            android:text=""
+            android:textSize="@dimen/tv_size_12sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_350dp_maps"
+            android:layout_height="@dimen/height_35dp_maps"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_bottom_5dp_maps"
+            android:layout_marginLeft="@dimen/margin_start_10dp_maps"
+            android:layout_marginStart="@dimen/margin_start_10dp_maps"
+            android:layout_toLeftOf="@id/imvGetMyLocation"
+            android:layout_toStartOf="@id/imvGetMyLocation">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.7"
+                android:background="@drawable/bg_tvdrag" />
+
+            <TextView
+                android:id="@+id/tvMovePositison"
+                android:layout_width="@dimen/width_350dp_maps"
+                android:layout_height="@dimen/height_35dp_maps"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/txt_move_the_pin_to_the_position"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_14sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imvGetMyLocation"
+            android:layout_width="@dimen/height_35dp_maps"
+            android:layout_height="@dimen/height_35dp_maps"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_bottom_5dp_maps"
+            android:layout_marginEnd="@dimen/margin_start_10dp_maps"
+            android:layout_marginLeft="@dimen/margin_start_10dp_maps"
+            android:layout_marginRight="@dimen/margin_start_10dp_maps"
+            android:layout_marginStart="@dimen/margin_start_10dp_maps"
+            android:background="@drawable/bg_button_green_around"
+            android:contentDescription="@string/txt_content_description"
+            android:padding="@dimen/padding_5dp_maps"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_location_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin_left_15dp"
+            android:layout_marginRight="@dimen/margin_left_15dp"
+            android:layout_marginTop="@dimen/margin_top_20dp_maps">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardSearchLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_35dp_maps"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/edtAutocomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="@string/txt_search_location"
+                        android:inputType="textNoSuggestions"
+                        android:lines="1"
+                        android:paddingEnd="@dimen/margin_35dp_maps"
+                        android:paddingLeft="@dimen/margin_35dp_maps"
+                        android:paddingRight="@dimen/margin_35dp_maps"
+                        android:paddingStart="@dimen/margin_35dp_maps"
+                        android:singleLine="true"
+                        android:textSize="@dimen/tv_size_14sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_small_13dp"
+                        android:layout_height="@dimen/icon_small_13dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/padding_10dp_maps"
+                        android:layout_marginStart="@dimen/padding_10dp_maps"
+                        android:contentDescription="@string/txt_content_description"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/ic_svg_search" />
+
+                    <ImageView
+                        android:id="@+id/imvDelete"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/txt_content_description"
+                        android:scaleType="center"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_svg_delete_12" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardSearchLocation"
+                android:layout_marginTop="@dimen/padding_10dp_maps"
+                android:background="@color/tv_white"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:layout_above="@id/llBtn"
+        android:background="#BFBFBF" />
+</RelativeLayout>

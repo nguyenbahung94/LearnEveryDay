@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_layout"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_view_a_field" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_200dp_edit_field">
+
+        <fragment
+            android:id="@+id/fm_google_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_200dp_edit_field" />
+
+        <include layout="@layout/item_title_map" />
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/margin_25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imvLocation"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/description"
+                android:visibility="visible"
+                app:srcCompat="@drawable/icon_vector_location" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tvEdtPlace"
+            android:layout_width="@dimen/height_90dp_edit_field"
+            android:layout_height="@dimen/height_25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_15dp"
+            android:background="@drawable/bg_blue_1px"
+            android:gravity="center"
+            android:text="@string/txt_edit_place"
+            android:textAllCaps="false"
+            android:textColor="@color/bg_green_btn"
+            android:textSize="@dimen/tv_size_14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_10dp_edit_field"
+        android:background="@color/tv_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginBottom="@dimen/padding_5dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp_edit_field"
+            android:paddingStart="@dimen/margin_10dp_edit_field"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_title_place_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_place_type"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_15sp" />
+
+            <TextView
+                android:id="@+id/tvShowPlaceType"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/margin_left_15dp_edit_field"
+                android:layout_marginRight="@dimen/margin_left_15dp_edit_field"
+                android:layout_toEndOf="@+id/tv_title_place_type"
+                android:layout_toRightOf="@+id/tv_title_place_type"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/tvColor_d7"
+                android:textSize="@dimen/tv_size_15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_10dp_edit_field"
+            android:layout_marginStart="@dimen/margin_10dp_edit_field"
+            android:background="@color/tv_color_d2" />
+
+        <RelativeLayout
+            android:id="@+id/llEditPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:paddingLeft="@dimen/margin_10dp_edit_field"
+            android:paddingStart="@dimen/margin_10dp_edit_field"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_title_place"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_place_name"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_14sp" />
+
+            <ImageView
+                android:id="@+id/imvNext"
+                android:layout_width="@dimen/icon_small_13dp"
+                android:layout_height="@dimen/icon_small_13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_left_15dp_edit_field"
+                android:layout_marginRight="@dimen/margin_left_15dp_edit_field"
+                android:contentDescription="@string/txt_content_description"
+                app:srcCompat="@drawable/ic_svg_next" />
+
+            <TextView
+                android:id="@+id/tvShowPlaceName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_35dp"
+                android:layout_marginEnd="@dimen/margin_10dp_edit_field"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_10dp_edit_field"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_toEndOf="@+id/tv_title_place"
+                android:layout_toLeftOf="@id/imvNext"
+                android:layout_toRightOf="@+id/tv_title_place"
+                android:layout_toStartOf="@id/imvNext"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/tvColor_d7"
+                android:textSize="@dimen/tv_size_14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_10dp_edit_field"
+            android:layout_marginStart="@dimen/margin_10dp_edit_field"
+            android:background="@color/tv_color_d2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_20dp_edit_field"
+        android:background="@color/tv_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp_edit_field"
+            android:paddingStart="@dimen/margin_10dp_edit_field"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_title_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_recipes"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_14sp" />
+
+            <ImageView
+                android:id="@+id/imvChevronRight"
+                android:layout_width="@dimen/icon_small_13dp"
+                android:layout_height="@dimen/icon_small_13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_left_15dp_edit_field"
+                android:layout_marginRight="@dimen/margin_left_15dp_edit_field"
+                android:contentDescription="@string/txt_content_description"
+                app:srcCompat="@drawable/ic_svg_next" />
+
+            <TextView
+                android:id="@+id/tvCountRecipes"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_marginEnd="@dimen/margin_10dp_edit_field"
+                android:layout_marginRight="@dimen/margin_10dp_edit_field"
+                android:layout_toEndOf="@+id/tv_title_recipe"
+                android:layout_toLeftOf="@id/imvChevronRight"
+                android:layout_toRightOf="@+id/tv_title_recipe"
+                android:layout_toStartOf="@id/imvChevronRight"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/tvColor_d7"
+                android:textSize="@dimen/tv_size_14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_10dp_edit_field"
+            android:layout_marginStart="@dimen/margin_10dp_edit_field"
+            android:background="@color/tv_color_d2"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/llDataSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp_edit_field"
+            android:paddingLeft="@dimen/margin_10dp_edit_field"
+            android:paddingStart="@dimen/margin_10dp_edit_field"
+            android:visibility="gone"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_title_device"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_data_source"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_14sp" />
+
+            <ImageView
+                android:id="@+id/imvDevices"
+                android:layout_width="@dimen/icon_small_13dp"
+                android:layout_height="@dimen/icon_small_13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_left_15dp_edit_field"
+                android:layout_marginRight="@dimen/margin_left_15dp_edit_field"
+                android:contentDescription="@string/txt_content_description"
+                app:srcCompat="@drawable/ic_svg_next" />
+
+            <TextView
+                android:id="@+id/tvCountDevices"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_marginEnd="@dimen/margin_10dp_edit_field"
+                android:layout_marginRight="@dimen/margin_10dp_edit_field"
+                android:layout_toEndOf="@+id/tv_title_device"
+                android:layout_toLeftOf="@id/imvDevices"
+                android:layout_toRightOf="@+id/tv_title_device"
+                android:layout_toStartOf="@id/imvDevices"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/tvColor_d7"
+                android:textSize="@dimen/tv_size_14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_10dp_edit_field"
+            android:layout_marginStart="@dimen/margin_10dp_edit_field"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@color/tv_color_d2" />
+
+        <RelativeLayout
+            android:id="@+id/llMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_10dp_edit_field"
+            android:paddingLeft="@dimen/margin_10dp_edit_field"
+            android:paddingStart="@dimen/margin_10dp_edit_field"
+            android:visibility="gone"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_title_member"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/txt_members"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_14sp" />
+
+            <ImageView
+                android:id="@+id/imvMembers"
+                android:layout_width="@dimen/icon_small_13dp"
+                android:layout_height="@dimen/icon_small_13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_left_15dp_edit_field"
+                android:layout_marginRight="@dimen/margin_left_15dp_edit_field"
+                android:contentDescription="@string/txt_content_description"
+                app:srcCompat="@drawable/ic_svg_next" />
+
+            <TextView
+                android:id="@+id/tvCountMembers"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_marginEnd="@dimen/margin_10dp_edit_field"
+                android:layout_marginRight="@dimen/margin_10dp_edit_field"
+                android:layout_toEndOf="@+id/tv_title_member"
+                android:layout_toLeftOf="@id/imvMembers"
+                android:layout_toRightOf="@+id/tv_title_member"
+                android:layout_toStartOf="@id/imvMembers"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/tvColor_d7"
+                android:textSize="@dimen/tv_size_14sp"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp_edit_field"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@color/tv_white"
+        android:text="@string/txt_delete_field"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="@dimen/tv_size_15sp" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:background="@color/color_f6">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_18sp"
+            android:textStyle="bold"
+            tools:text="@string/fields_greenhouse" />
+
+        <TextView
+            android:id="@+id/tvExecute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/padding_10dp"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:text="@string/txt_done"
+            android:textColor="@color/bg_green_btn"
+            android:textSize="@dimen/tv_size_16sp" />
+    </RelativeLayout>
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/NumberPickerTextSize" />
+
+</LinearLayout>

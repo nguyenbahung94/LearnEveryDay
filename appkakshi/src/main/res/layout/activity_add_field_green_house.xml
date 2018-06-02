@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <include
+        android:id="@+id/layoutContainFourStep"
+        layout="@layout/item_contain_three_steps"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_greenhouse_height65dp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_greenhouse_height35dp"
+        android:layout_margin="@dimen/add_greenhouse_margin10dp"
+        android:background="@color/tv_white">
+
+        <ImageView
+            android:layout_width="@dimen/add_greenhouse_width13dp"
+            android:layout_height="@dimen/add_greenhouse_height13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/add_greenhouse_margin10dp"
+            android:layout_marginStart="@dimen/add_greenhouse_margin10dp"
+            android:contentDescription="@string/txt_content_description"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_svg_search" />
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions|textPersonName"
+            android:paddingLeft="@dimen/add_greenhouse_padding40dp"
+            android:paddingRight="@dimen/add_greenhouse_padding40dp"
+            android:textSize="@dimen/add_greenhouse_textsize15sp" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/txt_content_description"
+            android:scaleType="center"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_svg_delete_12" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lin_above_snappy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_greenhouse_height1dp"
+        android:background="@color/background_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSnappyRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:layout_marginEnd="@dimen/add_greenhouse_margin8dp"
+        android:layout_marginLeft="@dimen/add_greenhouse_margin8dp"
+        android:layout_marginRight="@dimen/add_greenhouse_margin8dp"
+        android:layout_marginStart="@dimen/add_greenhouse_margin8dp"
+        android:overScrollMode="never" />
+
+    <View
+        android:id="@+id/lin_below_snappy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_greenhouse_height1dp"
+        android:background="@color/background_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layoutGoNext"
+            android:layout_alignParentTop="true">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    tools:listitem="@layout/item_recipe_selection" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutGoNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_item_selected">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_greenhouse_height1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/background_line" />
+            <!--<TextView-->
+            <!--android:id="@+id/tvNumberItem"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/margin_15dp"-->
+            <!--android:layout_marginStart="@dimen/margin_15dp"-->
+            <!--android:text="0"-->
+            <!--android:textColor="@color/bg_green_btn"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/btnItemSelected"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:layout_marginStart="3dp"-->
+            <!--android:layout_toEndOf="@+id/tvNumberItem"-->
+            <!--android:layout_toRightOf="@+id/tvNumberItem"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:clickable="true"-->
+            <!--android:enabled="false"-->
+            <!--android:focusable="true"-->
+            <!--android:paddingBottom="14dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:paddingTop="14dp"-->
+            <!--android:text="item selected"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@android:color/black" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/btnReset"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginEnd="@dimen/margin_16dp"-->
+            <!--android:layout_marginRight="@dimen/margin_16dp"-->
+            <!--android:layout_toLeftOf="@+id/btnGoNext"-->
+            <!--android:layout_toStartOf="@+id/btnGoNext"-->
+            <!--android:background="@drawable/button_border"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true"-->
+            <!--android:paddingBottom="@dimen/padding_14dp"-->
+            <!--android:paddingLeft="@dimen/padding_16dp"-->
+            <!--android:paddingRight="@dimen/padding_16dp"-->
+            <!--android:paddingTop="@dimen/padding_14dp"-->
+            <!--android:text="@string/txt_reset"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/bg_green_btn"-->
+            <!--android:visibility="gone" />-->
+
+            <com.ekakashi.greenhouse.features.recipe.add_field_greenhouse.AlphaTextView
+                android:id="@+id/btnGoNext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/add_greenhouse_margin6dp"
+                android:background="@drawable/button_border_corner_green"
+                android:clickable="true"
+                android:enabled="false"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/txt_go_to_next_step"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/add_greenhouse_textsize15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

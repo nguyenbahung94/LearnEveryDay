@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/img_tutorial1"
+        android:layout_width="@dimen/width_150dp"
+        android:layout_height="@dimen/height_150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_80dp"
+        android:src="@drawable/vectorsmartobject2" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_tuto_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_tutorial1"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_60dp"
+        android:gravity="center"
+        android:text="@string/tv_page2_top_tutorial"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_18sp" />
+
+    <TextView
+        android:id="@+id/tv_tuto_txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_txt1"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:gravity="center"
+        android:text="@string/tv_page2_mid_tutorial"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_txt2"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:gravity="center"
+        android:text="@string/tv_page2_bot_tutorial"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_15sp" />
+
+
+</RelativeLayout>

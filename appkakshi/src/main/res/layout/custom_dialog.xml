@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_border_corner_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center"
+        android:textColor="@color/tv_color_0000"
+        android:textSize="@dimen/tv_size_16sp"
+        tools:text="Reset Sensor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp">
+
+        <LinearLayout
+            android:id="@+id/llOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="This will reset all current sensor data"
+                android:textColor="@color/tv_color_111111" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="and should be used ONLY when an"
+                android:textColor="@color/tv_color_111111" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="incident occurs.Are you sure?"
+                android:textColor="@color/tv_color_111111" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="This will secceed the current equipment"
+                android:textColor="@color/tv_color_111111" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="data and replace with new equipment"
+                android:textColor="@color/tv_color_111111" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/txt_are_you_sure"
+                android:textColor="@color/tv_color_111111" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:background="@color/background_line" />
+
+        <View
+            android:id="@+id/lineCenter"
+            android:layout_width="@dimen/height_1dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/background_line" />
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/lineCenter"
+            android:layout_toStartOf="@id/lineCenter"
+            android:gravity="center"
+            android:text="@string/txt_cancel"
+            android:textColor="@color/color_tv7f"
+            android:textSize="@dimen/tv_size_16sp" />
+
+
+        <TextView
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/lineCenter"
+            android:layout_toRightOf="@id/lineCenter"
+            android:gravity="center"
+            android:text="@string/txt_ok"
+            android:textColor="@color/color_tv7f"
+            android:textSize="@dimen/tv_size_16sp" />
+    </RelativeLayout>
+
+</LinearLayout><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>-->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_150dp"
+    android:layout_marginTop="@dimen/margin_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/CombinedChart"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:id="@+id/tvNameGraph"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp"
+            android:background="@color/tv_graph_title"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="asdasdasdasdasdasasda"
+            android:textColor="@color/tv_white"
+            android:textSize="@dimen/tv_size_14sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

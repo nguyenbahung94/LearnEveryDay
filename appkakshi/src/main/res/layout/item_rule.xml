@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_8dp"
+    android:background="@color/tv_white">
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/reorder_stage_width21dp"
+        android:layout_height="@dimen/reorder_stage_width21dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:contentDescription="@string/txt_content_description"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_svg_ban"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tvRule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/imgDelete"
+        android:layout_toLeftOf="@+id/imgNotifyRule"
+        android:layout_toRightOf="@+id/imgDelete"
+        android:layout_toStartOf="@+id/imgNotifyRule"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/edit_stage_padding16dp"
+        android:paddingTop="@dimen/edit_stage_padding16dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/edit_recipe_text_size_15sp"
+        tools:text="When the temperature is 18 degrees Celsius and less, post a warning on the time line and send a notification. Moreover, operate the temperature controller." />
+
+    <!--<android.support.v7.widget.SwitchCompat-->
+        <!--android:id="@+id/switchRule"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginEnd="@dimen/margin_15dp"-->
+        <!--android:layout_marginLeft="@dimen/margin_15dp"-->
+        <!--android:layout_marginRight="@dimen/margin_15dp"-->
+        <!--android:layout_marginStart="@dimen/margin_15dp"-->
+        <!--android:theme="@style/SwitchCompatStyle" />-->
+
+    <ImageView
+        android:id="@+id/imgNotifyRule"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:contentDescription="@string/txt_content_description"
+        android:src="@drawable/noti_on" />
+
+</RelativeLayout>

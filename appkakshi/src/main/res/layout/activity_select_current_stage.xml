@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.ekakashi.greenhouse.features.recipe.stage.select_current_stage.SelectCurrentStageActivity">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_current_stage_height58dp"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/padding_8dp"
+        android:paddingEnd="@dimen/padding_15dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingStart="@dimen/padding_15dp"
+        android:text="@string/growing_stages"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/select_current_stage_text_size_16sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/lineAbove"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1dp"
+                android:background="@color/background_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvStage"
+                android:layout_below="@+id/lineAbove"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/btnAddStage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rvStage"
+                android:layout_marginTop="@dimen/margin_15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reorder_stage_height50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="@drawable/bg_boder_nonconer"
+                    android:drawablePadding="@dimen/padding_30dp"
+                    android:gravity="start|center"
+                    android:paddingLeft="@dimen/padding_5dp"
+                    android:paddingStart="@dimen/padding_50dp"
+                    android:text="@string/add_growing_stage"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/reorder_stage_text_size_14sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:layout_width="@dimen/reorder_stage_width_21dp"
+                    android:layout_height="@dimen/reorder_stage_width_21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_add_more" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

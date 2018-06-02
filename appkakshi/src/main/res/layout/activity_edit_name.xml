@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_layout"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="@dimen/height_30dp"
+
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/edtPlaceName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@color/tv_white"
+                android:hint="@string/txt_hint_enter_field_name"
+                android:inputType="textPersonName|textNoSuggestions"
+                android:paddingEnd="@dimen/margin_30dp"
+                android:paddingLeft="@dimen/padding_15dp"
+                android:paddingRight="@dimen/margin_30dp"
+                android:paddingStart="@dimen/padding_15dp"
+                android:textSize="@dimen/tv_size_15sp" />
+
+            <ImageView
+                android:id="@+id/imvClose"
+                android:layout_width="@dimen/height_40dp"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/description"
+                android:scaleType="center"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_svg_delete_12" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

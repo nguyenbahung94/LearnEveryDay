@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/height_30dp"
+    android:background="@drawable/layout_graph_round_corner"
+    android:paddingBottom="@dimen/padding_5dp"
+    android:paddingEnd="@dimen/padding_10dp"
+    android:paddingLeft="@dimen/padding_10dp"
+    android:paddingRight="@dimen/padding_10dp"
+    android:paddingStart="@dimen/padding_10dp"
+    android:paddingTop="@dimen/padding_5dp">
+
+    <EditText
+        android:background="@null"
+        android:textColor="@color/tvColor_d7"
+        android:id="@+id/tvFilterApply"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:hint="Text here"
+        android:textSize="@dimen/tv_size_14sp" />
+
+</RelativeLayout>

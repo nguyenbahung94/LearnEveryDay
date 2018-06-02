@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_150dp"
+    android:layout_height="@dimen/height_150dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_amount_of_insolation"
+        android:textColor="@color/color_tv4242"
+        android:textSize="@dimen/tv_size_15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imvWeather"
+            android:layout_width="45dp"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_35dp"
+            android:contentDescription="@string/description" />
+
+        <TextView
+            android:id="@+id/currentTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_35dp"
+            android:layout_alignTop="@id/imvWeather"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_toEndOf="@+id/imvWeather"
+            android:layout_toRightOf="@+id/imvWeather"
+            android:gravity="top"
+            android:text="10"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentTemperature"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_toEndOf="@id/imvWeather"
+            android:layout_toRightOf="@id/imvWeather"
+            android:text="@string/txt_kwh_m2_day"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_12sp" />
+
+    </RelativeLayout>
+</LinearLayout>

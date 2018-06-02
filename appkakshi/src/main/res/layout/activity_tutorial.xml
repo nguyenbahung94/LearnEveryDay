@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tutorial">
+
+    <!--<RelativeLayout
+        android:id="@+id/rel_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel_bottom_tutorial"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:background="@android:color/transparent">-->
+
+        <com.ekakashi.greenhouse.features.tutorial.MyViewPager
+            android:id="@+id/viewpager_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:overScrollMode="never" />
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_50dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <LinearLayout
+            android:id="@+id/llDots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+        <!--<Button-->
+        <!--android:layout_below="@+id/llDots"-->
+        <!--android:layout_marginBottom="@dimen/margin_15dp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:text="新規登録（無料）"-->
+        <!--android:id="@+id/btn_tutorial_pink"-->
+        <!--android:background="@drawable/bg_btn_tutorial_pink"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/tv_size_15sp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/height_35dp" />-->
+        <!--<Button-->
+        <!--android:id="@+id/btn_tutorial_yel"-->
+        <!--android:text="ログイン"-->
+        <!--android:textSize="@dimen/tv_size_15sp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_below="@+id/btn_tutorial_pink"-->
+        <!--android:background="@drawable/bg_btn_tutorial_yel"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/height_35dp" />-->
+        <!--<TextView-->
+        <!--android:layout_below="@+id/btn_tutorial_yel"-->
+        <!--android:layout_marginTop="@dimen/margin_15dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:textSize="@dimen/tv_size_15sp"-->
+        <!--android:text="パスワードを忘れた場合"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

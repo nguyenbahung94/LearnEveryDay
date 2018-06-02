@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_boder_nonconer"
+    android:orientation="vertical">
+
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:paddingEnd="@dimen/margin_15dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingStart="@dimen/padding_15dp">
+
+        <ImageView
+            android:id="@+id/imvRecipe"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/height_35dp_view_afield"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_boder_nonconer"
+            android:contentDescription="@string/txt_content_description"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:id="@+id/tvNameRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_toEndOf="@id/imvRecipe"
+            android:layout_toRightOf="@id/imvRecipe"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_23sp"
+            tools:text="54464646464646464646564564646" />
+
+        &lt;!&ndash;  <TextView
+              android:id="@+id/tvState"
+              android:layout_width="wrap_content"
+              android:layout_height="35dp"
+              android:layout_below="@id/tvNameRecipe"
+              android:layout_marginLeft="@dimen/margin_10dp"
+              android:layout_marginStart="@dimen/margin_10dp"
+              android:layout_toEndOf="@id/imvRecipe"
+              android:layout_toRightOf="@id/imvRecipe"
+              android:gravity="top"
+              android:text="State :"
+              android:textColor="@color/tvColord7"
+              android:textSize="13sp" />&ndash;&gt;
+
+        &lt;!&ndash; <TextView
+             android:id="@+id/tvStatusStage"
+             android:layout_width="match_parent"
+             android:layout_height="35dp"
+             android:layout_alignParentBottom="true"
+             android:layout_below="@id/tvNameRecipe"
+             android:layout_marginLeft="@dimen/margin_10dp"
+             android:layout_marginStart="@dimen/margin_10dp"
+             android:layout_toEndOf="@id/tvState"
+             android:layout_toLeftOf="@+id/btnViewGraph"
+             android:layout_toRightOf="@id/tvState"
+             android:layout_toStartOf="@+id/btnViewGraph"
+             android:ellipsize="end"
+             android:gravity="top"
+             android:text="Flowering period"
+             android:textColor="@color/tvColord7"
+             android:textSize="13sp" />&ndash;&gt;
+
+        &lt;!&ndash; <TextView
+             android:id="@+id/btnViewGraph"
+             android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:gravity="center_vertical"
+             android:text=" Graph"
+             android:textAllCaps="false"
+             android:textColor="@color/bg_green_btn"
+             android:textSize="@dimen/tv_size_14sp" />&ndash;&gt;
+    </RelativeLayout>
+
+    &lt;!&ndash; <TextView
+         android:id="@+id/tvDetailRecipe"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:paddingLeft="@dimen/padding_15dp"
+         android:paddingRight="15dp"
+         android:text="30 more days before fruit growth period"
+         android:textColor="@color/tvColor44"
+         android:textSize="@dimen/tv_size_14sp" />
+ &ndash;&gt;  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:layout_marginTop="5dp"
+    android:background="@color/tv_color_d2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingStart="@dimen/padding_15dp">
+
+        <TextView
+            android:id="@+id/titleCurrentState"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/current_stage"
+            android:textColor="@color/tv_color_0000"
+            android:textSize="@dimen/tv_size_15sp" />
+
+        <TextView
+            android:id="@+id/tvShowCurrentState"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@id/titleCurrentState"
+            android:layout_toRightOf="@id/titleCurrentState"
+            android:ellipsize="end"
+            android:gravity="center_vertical|end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/tvColord8"
+            android:textSize="@dimen/tv_size_15sp"
+            tools:text="@string/flowering_period" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/padding_15dp"
+        android:layout_marginStart="@dimen/padding_15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/tv_color_d2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingStart="@dimen/padding_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/days_until_next_stage"
+            android:textColor="@color/tv_color_0000"
+            android:textSize="@dimen/tv_size_15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/tvColord8"
+            android:textSize="@dimen/tv_size_15sp"
+            tools:text="30" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/background_line" />
+
+    <Button
+        android:id="@+id/btnGotoNextState"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/padding_15dp"
+        android:background="@color/bg_green_btn"
+        android:enabled="true"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/proceed_to_the_next_stage"
+        android:textAllCaps="false"
+        android:textColor="@color/tv_white"
+        android:textSize="@dimen/tv_size_15sp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_10dp"
+        android:paddingStart="@dimen/padding_10dp"
+        tools:ignore="RtlSymmetry,UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/icon_21dp"
+            android:layout_height="@dimen/icon_21dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/ic_svg_field_weather" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginStart="@dimen/padding_10dp"
+            android:text="@string/weather"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/tv_size_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:gravity="center_vertical|end"
+            android:text="@string/txt_view_all"
+            android:textColor="@color/bg_green_btn"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/tv_color_d2" />
+
+    <LinearLayout
+        android:id="@+id/llContainWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" />
+
+
+</LinearLayout>

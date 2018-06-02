@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp45"
+    android:layout_marginTop="@dimen/dp15"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginStart="@dimen/dp15"
+        android:text="@string/email"
+        android:textColor="@color/tvColor44"
+        android:textSize="@dimen/sp14" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_toEndOf="@+id/tv_title"
+        android:layout_toRightOf="@+id/tv_title"
+        android:background="@null"
+        android:gravity="end"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/sp14" />
+
+</RelativeLayout>

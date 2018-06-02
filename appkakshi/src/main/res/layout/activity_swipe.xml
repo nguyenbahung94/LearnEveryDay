@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation">
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_toolbar"
+        app:itemIconTint="@drawable/bg_bottom_navigation"
+        app:itemTextColor="@drawable/bg_bottom_navigation"
+        app:menu="@menu/navigation">
+
+        <TextView
+            android:id="@+id/tvBadgeTimeline"
+            android:layout_width="@dimen/width_20dp"
+            android:layout_height="@dimen/height_20dp"
+            android:layout_marginStart="@dimen/margin_70dp"
+            android:layout_marginLeft="@dimen/margin_70dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/bottom_navigation_badge"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small_2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBadgeSetting"
+            android:layout_width="@dimen/width_20dp"
+            android:layout_height="@dimen/height_20dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_50dp"
+            android:layout_marginRight="@dimen/margin_50dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/bottom_navigation_badge"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small_2"
+            android:textStyle="bold" />
+    </android.support.design.widget.BottomNavigationView>
+
+
+</RelativeLayout>

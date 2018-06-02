@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Green house</string>
+
+    <!--format datetime-->
+    <string name="format_date_time">yyyy/MM/dd</string>
+
+    <!-- Strings related to login -->
+    <string name="warning">警告</string>
+      
+    <string name="token_expired">トークンの有効期限が切れ</string>
+      
+    <color name="actionbar_opacity">#33000000</color><![CDATA[
+      
+
+      
+
+      
+      
+    ]]>
+    <string name="action_sign_in_short">サインイン</string>
+      
+    <string name="error_invalid_email">この電子メールアドレスが無効です</string>
+      
+    <string name="error_invalid_password">このパスワードは短すぎます</string><![CDATA[
+      
+      
+    ]]><string name="error_field_required">この項目は必須です</string><![CDATA[
+      
+
+      
+
+      
+
+      
+
+
+      
+
+
+      
+      
+    ]]><string name="register_email">メールアドレスを入力して</string><![CDATA[
+      
+
+      
+      
+    ]]>
+    <string name="register_password">パスワードを入力する</string>
+      
+    <string name="title_activity_main">主な活動</string>
+      
+    <string name="title_main">メイン</string>
+      
+    <string name="title_timeline">タイムライン</string><![CDATA[
+      
+
+
+      
+
+      
+      
+    ]]>
+    <string name="login_forgot_pass">パスワードをお忘れですか</string>
+      
+    <string name="title_forgot_pass">パスワードをお忘れですか？</string>
+      
+    <string name="title_des_forgot_pass">あなたのアカウントにアクセスするには、メールアドレスを入力してください。</string>
+      
+    <string name="title_des_forgot_back">戻るサインインするには</string>
+      
+    <string name="login_lb_register">アカウントを持っていますか？</string>
+      
+    <string name="login_register">登録</string>
+      
+    <string name="login_social">OR</string><![CDATA[
+      
+
+      
+
+      
+      
+    ]]>
+    <string name="tutorial_next">→次</string>
+      
+    <string name="btn_dialog_ok">[OK]</string>
+      
+    <string name="message_next_phase">この機能は、次の段階で実装されます</string>
+      
+    <string name="login_check_email">メールをチェック</string>
+
+      
+    <string name="locale_ja">日本語</string>
+      
+    <string name="locale_en">英語</string>
+      
+    <string name="language_setting">言語設定</string>
+
+    <string name="language_setting_confirm">言語を適用するため、アプリを再起動します。宜しいでしょうか。</string>
+
+      
+    <string name="login_send_email_full">私たちは、％sにメールを送った。¥nパスワードをリセットメールに示されているリンクをクリックしてください。</string>
+      
+    <string name="login_send_email">私たちは、にメールを送りました</string><![CDATA[
+      
+      
+    ]]>
+    <string name="login_register_text">。登録するには、メールに示されたリンクをクリックしてください。</string>
+      
+    <string name="toolbar_cancel">キャンセル</string>
+      
+    <string name="toolbar_close">閉じる</string>
+      
+    <string name="toolbar_done">完了</string>
+      
+    <string name="account_setting_email">Eメール</string>
+      
+    <string name="account_setting_nickname">ニックネーム</string>
+      
+    <string name="account_setting_lastname">苗字</string>
+      
+    <string name="account_setting_firstname">フルネーム</string>
+      
+    <string name="account_setting_myweb">私のウェブ</string>
+      
+    <string name="account_setting">アカウントの設定</string>
+      
+    <string name="toolbar_save">保存</string>
+      
+    <string name="camera_action">イメージを選択</string><![CDATA[
+      
+      
+    ]]><string name="notification">お知らせ</string><![CDATA[
+      
+
+      
+      
+    ]]>
+    <string name="account_logout">ログアウト</string>
+      
+    <string name="account_logout_confirm">あなたがログアウトしてもよろしいですか？</string>
+      
+    <string name="notification_detail">通知の詳細</string>
+      
+    <string name="toolbar_post">役職</string><![CDATA[
+      
+
+      
+      
+    ]]>
+
+    <string name="timeline_work_type">仕事の種類</string>
+
+    <string name="timeline_target_crop">ターゲットクロップ</string>
+
+    <string name="timeline_disease">疾患</string>
+      
+    <string name="timeline_pesticide">殺虫剤</string>
+      
+    <string name="timeline_fertilizer">肥料</string>
+      
+    <string name="timeline_date_specification">日付の指定</string>
+      
+    <string name="search_hint">検索レシピ</string>
+      
+    <string name="fields_greenhouse">フィールド/温室効果</string>
+      
+    <string name="settings">設定</string>
+      
+    <string name="add_rule">ルールの追加</string>
+      
+    <string name="add_action">アクションの追加</string>
+      
+    <string name="add_condition">条件の追加</string>
+      
+    <string name="button_default">デフォルト</string>
+      
+    <string name="button_customized">カスタマイズ</string>
+      
+    <string name="select_current_stage">現在の段階を選択</string>
+      
+    <string name="current_stage">現段階</string>
+      
+    <string name="recipe_selected">レシピ選択</string>
+      
+    <string name="revision_history">改訂履歴</string>
+      
+    <string name="toolbar_send">送ります</string>
+      
+    <string name="add_stage_string">ステージ：</string>
+      
+    <string name="clone">クローン</string>
+      
+    <string name="cancel">キャンセル</string>
+
+      
+    <string name="recipe">レシピ</string><![CDATA[
+      
+      
+    ]]>
+    <string name="recipe_name">レシピ名</string>
+      
+    <string name="category">分類</string>
+      
+    <string name="crop">収穫</string>
+      
+    <string name="prefecture">都道府県</string>
+      
+    <string name="recipe_ver">レシピバージョン</string>
+      
+    <string name="author">著者</string>
+      
+    <string name="overview">概要</string>
+      
+    <string name="scope_of_disclosure">公開範囲</string>
+      
+    <string name="change_availability">変更の可用性</string>
+      
+    <string name="growing_stage_information">成長期情報</string>
+      
+    <string name="see_revision_history">改訂履歴を参照してください。</string>
+
+      
+    <string name="timeline_remote_control">リモコン</string>
+      
+    <string name="timeline_diary">日記</string>
+      
+    <string name="filter_apply">適用します</string>
+      
+    <string name="filter_reset">リセット</string><![CDATA[
+      
+      
+    ]]>
+    <string name="filter_day_to">に</string>
+      
+    <string name="filter_day_from">から</string>
+      
+    <string name="filter_member">メンバー</string>
+      
+    <string name="filter">フィルタ</string>
+      
+    <string name="add_growing_stage">成長ステージの追加</string>
+      
+    <string name="growing_stage_name">成長ステージ名</string>
+      
+    <string name="stage_description">ステージ説明</string><![CDATA[
+      
+      
+    ]]>
+    <string name="rules">ルール</string>
+      
+    <string name="filter_all">すべて</string>
+      
+    <string name="search">サーチ</string>
+
+      <!--Setting-->
+      
+    <string name="settings_ui_account">アカウント設定</string>
+      
+    <string name="settings_ui_app_setting">アプリケーションの設定</string>
+      
+    <string name="settings_ui_setting_type">アプリケーションについて</string><![CDATA[
+      
+      
+    ]]>
+    <string name="settings_ui_notification">通知設定</string>
+      
+    <string name="settings_ui_language">言語</string><![CDATA[
+      
+      
+    ]]>
+    <string name="settings_ui_instructions">説明書</string>
+      
+    <string name="settings_ui_facebook">e-kakashi Facebook</string>
+      
+    <string name="settings_ui_term">年期</string>
+      
+    <string name="settings_ui_privacy">個人情報保護方針</string>
+      
+    <string name="settings_ui_logout">ログアウト</string>
+      
+    <string name="separator">&#32;-&#32;</string>
+      
+    <string name="hh_mm">HH:mm</string>
+      
+    <string name="post_date_specification">日付指定</string>
+      
+    <string name="post_none">なし</string>
+
+    <string name="post_target_crop">ターゲットクロップ</string>
+
+    <string name="post_work_type">仕事の種類</string>
+      
+    <string name="post_fertilizer">肥料</string>
+      
+    <string name="post_pesticide">殺虫剤</string>
+      
+    <string name="post_disease">疾患</string>
+      
+    <string name="post_workplace">職場</string>
+      
+    <string name="post_work_description">作業説明</string>
+      
+    <string name="toolbar_post_diary">ポスト日記</string>
+      
+    <string name="add_recipe">レシピを追加</string>
+      
+    <string name="post_timeline_hint_description">ここでのタイプ説明</string><![CDATA[
+      
+      
+    ]]>
+    <string name="post_timeline_hint_disease">タイプ病</string>
+      
+    <string name="post_timeline_hint_pesticide">タイプの農薬</string>
+      
+    <string name="post_k_potassium">K（カリウム）</string>
+      
+    <string name="post_type_k">Kを入力します。</string>
+      
+    <string name="post_type_p">Pを入力します。</string>
+      
+    <string name="post_p_phosphoric_acid">P（リン酸）</string>
+      
+    <string name="post_type_n">Nを入力します。</string>
+      
+    <string name="post_n_nitrogen">N（窒素）</string>
+      
+    <string name="post_other">他の</string>
+      
+    <string name="recent_searches">最近の検索</string>
+      
+    <string name="alert">警報</string>
+    <string name="delete_post">投稿を削除</string>
+      
+    <string name="diary_delete_confirm">あなたはこの記事を削除してもよろしいですか？</string>
+      
+    <string name="timeline_post_title">ポスト日記</string>
+      
+    <string name="loading">積載</string>
+      
+    <string name="message_please_wait">お待ちください.....</string>
+      
+    <string name="txt_edit">編集します</string><![CDATA[
+      
+
+      
+      
+    ]]>
+      
+    <string name="text_deletesuccess">成功の削除</string>
+      
+    <string name="txt_deletefailed">削除に失敗しました</string><![CDATA[
+      
+      
+    ]]><string name="message_dragposition">エリアを決定するために位置をドラッグ</string><![CDATA[
+      
+
+      
+      
+    ]]><string name="toast_success">成功</string><![CDATA[
+      
+      
+
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+
+    ]]>
+    <string name="txt_basic_information">基本情報</string>
+      
+    <string name="txt_place_type">置きタイプ</string>
+      
+    <string name="txt_place_name">地名</string>
+      
+    <string name="txt_data_source">情報元</string>
+      
+    <string name="txt_recipes">レシピ</string>
+      
+    <string name="txt_map">地図</string>
+      
+    <string name="txt_finish">フィニッシュ</string>
+      
+    <string name="txt_greenhouse">温室</string>
+      
+    <string name="txt_place_name2">地名*</string>
+      
+    <string name="txt_hint_enter_field_name">フィールド名を入力します。</string>
+      
+    <string name="txt_go_to_next_step">次のステップに進みます</string>
+      
+    <string name="txt_devices_percent">%d\%</string><![CDATA[
+      
+      
+    ]]>
+    <string name="txt_members">メンバー</string>
+      
+    <string name="txt_move_the_pin_to_the_position">位置にピンを移動します</string>
+      
+    <string name="txt_change_position">変更位置</string>
+      
+    <string name="txt_delete">削除</string>
+
+    <string name="txt_delete_field">フィールドの削除</string>
+      
+    <string name="txt_search_location">検索場所</string>
+      
+    <string name="txt_determine_the_position">位置を決定します</string>
+      
+    <string name="txt_determine_the_area">エリアを決定します</string>
+      
+    <string name="txt_linked_devices">リンクされたデバイス</string>
+      
+    <string name="txt_content_description">contentDescription</string><![CDATA[
+      
+
+      
+
+      
+
+      
+      
+    ]]>
+    <string name="txt_ventilation_window_open_close_motor">換気窓のオープン/クローズモーター</string>
+      
+    <string name="txt_status">状態</string>
+      
+    <string name="txt_reset_sensor">センサーをリセット</string><![CDATA[
+      
+
+      
+      
+    ]]><string name="txt_confirm">確かめます</string><![CDATA[
+      
+
+      
+      
+
+      
+      
+    ]]><string name="txt_done">完了</string><![CDATA[
+      
+      
+    ]]><string name="txt_please_enable_internet_and_gps">インターネットとGPSを有効にしてください</string><![CDATA[
+      
+
+      
+
+      
+      
+    ]]>
+    <string name="time_now">今</string>
+      
+    <string name="time_yesterday">昨日</string>
+      
+    <string name="time_hours_ago">％d時間前</string>
+      
+    <string name="time_minutes_ago">％d分前</string>
+      
+    <string name="time_hour_ago">％d個の時間前</string>
+      
+    <string name="time_minute_ago">％d個分前</string>
+      
+    <string name="next_time_hours">次の％d時間</string>
+      
+    <string name="next_time_minutes">次の％d分</string>
+      
+    <string name="next_time_hour">次の％d個の時間</string>
+      
+    <string name="next_time_minute">次の％d個分</string>
+
+      
+    <string name="type">タイプ</string>
+      
+    <string name="device_add_device">デバイスを追加</string>
+      
+    <string name="device_scan_device">QRコードをスキャン</string>
+      
+    <string name="device_add_id">ここでは、デバイスIDを入力します。</string>
+      
+    <string name="device_scan_id">デバイスIDを取得するためにQRコードをスキャン</string>
+      
+    <string name="device_hold_scan_id">QRコードを介してデバイスを保持</string><![CDATA[
+      
+      
+    ]]>
+    <string name="device_name">装置名*</string>
+      
+    <string name="device_window_type">ウィンドウタイプ</string>
+      
+    <string name="device_id">デバイスID</string>
+      
+    <string name="device_install_place">設置場所</string>
+      
+    <string name="device_for_each_device">各デバイスの</string>
+      
+    <string name="device_title_suggest">初期設定が完了した後、デバイスにのみ登録することができます。</string>
+      
+    <string name="device_title_go_to_external">外部のサイトに移動します</string>
+      
+    <string name="device_button_perform_initial">初期設定を行います</string>
+      
+    <string name="device_button_register_device">デバイスの登録</string>
+      
+    <string name="device_system_auto">システムの自動制御</string><![CDATA[
+      
+
+      
+    ]]>
+    <string name="recipe_selection">レシピ選択</string><![CDATA[
+      
+      
+    ]]>
+    <string name="image_delete_confirm">あなたはこのイメージを削除してもよろしいですか？</string>
+      
+    <string name="image_limit_confirm">画像の上限は3です！</string>
+      
+    <string name="member_list_no_member">使用可能なメンバーいいえ</string>
+      
+    <string name="member_list_invite">メンバーを招待</string>
+      
+    <string name="member_list">メンバーリスト</string>
+      
+    <string name="authority_administrator">管理者</string>
+      
+    <string name="authority_user">ユーザー</string>
+      
+    <string name="authority_worker">ワーカー</string>
+      
+    <string name="authority_user_description">ユーザーが投稿し、制御や通知を受信することはできません</string>
+      
+    <string name="authority_worker_description">労働者は、フィールド/温室（*登録する場合にのみ）の転記や機器を制御し、フィールド/温室についての通知を受け取ることができます。</string>
+      
+    <string name="authority">権限</string>
+      
+    <string name="email">Eメール</string>
+      
+    <string name="hint_email">email@example.com</string>
+      
+    <string name="add_more_member">より多くのメンバーを追加します。</string><![CDATA[
+      
+
+      
+
+      
+
+      
+      
+
+    ]]>
+    <string name="txt_add_field_greenhouse">フィールド/温室を追加</string>
+      
+    <string name="txt_info">インフォ</string>
+      
+    <string name="txt_number_2">2</string>
+      
+    <string name="txt_recipe">レシピ</string>
+      
+    <string name="txt_number_3">3</string>
+      
+    <string name="txt_place">プレイスタイプ</string>
+      
+    <string name="txt_number_4">4</string>
+      
+    <string name="description">説明</string>
+      
+    <string name="txt_cancel">キャンセル</string>
+      
+    <string name="txt_place_registration">場所の登録</string>
+      
+    <string name="txt_edit_place">場所を編集</string><![CDATA[
+      
+      
+    ]]><string name="cannot_determine_current_location">現在の位置を決定することはできません</string><![CDATA[
+      
+      
+    ]]>
+    <string name="toast_error_when_get_place">位置を決定することはできません</string>
+      
+    <string name="grains">穀類</string>
+      
+    <string name="system_news">システムニュース</string>
+      
+    <string name="notification_new_function">システムニュース通知</string>
+      
+    <string name="notification_system_notification">システム通知</string>
+      
+    <string name="notification_at_device">デバイスの異常で</string>
+      
+    <string name="notification_by_someone">誰かに投稿</string>
+      
+    <string name="notification_from_timeline">タイムラインからの通知</string>
+      
+    <string name="conditions_0_2">条件（0/2）</string>
+      
+    <string name="actions">行動</string>
+      
+    <string name="and">そして</string>
+      
+    <string name="or">若しくは</string>
+      
+    <string name="disclosure">パブリック</string>
+      
+    <string name="undisclosure">プライベート</string>
+      
+    <string name="changeable">可変</string>
+      
+    <string name="unchangeable">不変</string>
+      
+    <string name="edit_recipe_success">編集レシピ成功</string>
+      
+    <string name="field_name">フィールド名</string><![CDATA[
+      
+      
+    ]]>
+    <string name="advise_regarding_the_details_below">以下の詳細についてアドバイス</string>
+      
+    <string name="enter_title">タイトルを入力します。</string>
+      
+    <string name="title">タイトル</string>
+      
+    <string name="content">コンテンツ</string>
+      
+    <string name="advice_content">アドバイスの内容</string>
+      
+    <string name="url">URL</string>
+      
+    <string name="enter_url">URLを入力</string>
+      
+    <string name="plus">+</string>
+      
+    <string name="measurement_device">測定装置</string>
+      
+    <string name="measurement_item">測定項目</string>
+      
+    <string name="counting_method">カウント方法</string>
+      
+    <string name="determination_value">判定値</string>
+      
+    <string name="member_pending_approval">承認待ちの</string>
+      
+    <string name="member_approved">承認</string>
+      
+    <string name="txt_created">作成した：</string><![CDATA[
+      
+      
+    ]]><string name="txt_registration_date">登録日</string><![CDATA[
+      
+      
+    ]]>
+    <string name="txt_open_close_degree">オープン/クローズ学位</string>
+      
+    <string name="txt_operation_record">操作の記録</string>
+      
+    <string name="txt_abnormal">異常な</string>
+      
+    <string name="txt_how_to_handle">処理する方法</string>
+      
+    <string name="txt_replace_sensor">センサーを交換してください</string><![CDATA[
+      
+      
+    ]]>
+    <string name="member_list_remove">あなたはこのメンバーを削除してもよろしいですか？</string>
+      
+    <string name="member_remove">メンバーを削除します</string>
+      
+    <string name="delete_member_fail">メンバーの削除に失敗</string><![CDATA[
+      
+
+      
+    ]]>
+    <string name="name">名</string>
+      
+    <string name="growing_stages">成長ステージ</string>
+      
+    <string name="image">画像</string>
+      
+    <string name="recipe_image">レシピ画像</string>
+
+
+      
+    <string name="text_next">次</string>
+      
+    <string name="text_select_type">タイプを選択</string>
+      
+    <string name="text_rule_1">瞬時値のルール</string>
+      
+    <string name="text_rule_2">集計値に関する規則</string>
+      
+    <string name="text_rule_3">制御装置のルール</string>
+      
+    <string name="text_action_1">タイムライン上のポスト</string>
+      
+    <string name="text_action_2">次のステージに移動します</string>
+      
+    <string name="text_action_3">シンプルな助言を与えます</string>
+      
+    <string name="text_action_4">栽培管理アドバイスを与えます</string>
+      
+    <string name="text_do_not_allowed_stage">Tは、この段階を削除することができます\</string>
+      
+    <string name="text_confirm_delete_stage">あなたはこの段階を削除しますか？</string>
+      
+    <string name="text_confirm_delete_action">あなたはこのアクションを削除しますか？</string>
+      
+    <string name="edit_recipe">情報を編集する</string>
+
+      
+    <string name="device_item_id">デバイスID：</string>
+      
+    <string name="device_item_date">登録日：</string>
+      
+    <string name="device_no_available">利用可能なデバイスいいえ</string>
+      
+    <string name="device_delete_confirm">あなたはそれを削除しますか？</string>
+      
+    <string name="text_confirm_delete_rule">このルールを削除しますか？</string>
+      
+    <string name="edit_growing_stage">成長段階編集</string>
+      
+    <string name="condition_1" tools:ignore="TypographyFractions">条件（1/2）</string>
+      
+    <string name="condition_2">条件（2/2）</string>
+      
+    <string name="condition_0">条件（0/2）</string>
+
+      
+    <string name="txt_emergency_stop">緊急停止</string><![CDATA[
+      
+
+      
+      
+    ]]>
+    <string name="txt_stop">やめる</string>
+      
+    <string name="toast_map_null">マップはnull</string>
+      
+    <string name="no_more_field">これ以上のフィールド</string>
+
+      
+    <string name="validate_date">日付は[開始日]以上でなければなりません</string>
+      
+    <string name="network_offine">ネットワークオフライン！</string>
+      
+    <string name="timeline_at">に</string>
+      
+    <string name="rule_list">ルールの一覧</string>
+      
+    <string name="text_end_load_more">表示するデータがありません</string>
+      
+    <string name="timeline_item_target_crop">標的作物：</string>
+      
+    <string name="timeline_item_fertilizer">肥料：</string>
+      
+    <string name="timeline_item_pesticide">農薬：</string>
+      
+    <string name="timeline_item_disease">疾患：</string>
+      
+    <string name="timeline_item_work_type">雇用形態：</string>
+      
+    <string name="filter_crop">収穫</string><![CDATA[
+      
+      
+    ]]><string name="add_details">詳細を追加</string><![CDATA[
+      
+
+      
+      
+    ]]>
+    <string name="growing_stage_info">成長段階情報</string>
+      
+    <string name="device_1">デバイス＃1</string>
+      
+    <string name="temperature">温度</string><![CDATA[
+      
+
+    ]]>
+    <string name="numerical_comparison">数値比較</string>
+      
+    <string name="_10">10</string>
+      
+    <string name="increase">増加する</string>
+      
+    <string name="_10_to_20_mins">10〜20分</string>
+      
+    <string name="txt_field">フィールド</string>
+      
+    <string name="txt_view_information">ビュー情報</string>
+      
+    <string name="txt_field_change">変更するにはタップ</string>
+      
+    <string name="txt_field_greenhouse">フィールド/温室</string>
+      
+    <string name="txt_edit_place_name">編集場所の名前</string><![CDATA[
+      
+      
+    ]]>
+    <string name="number_2">2</string>
+      
+    <string name="txt_advice">助言</string>
+      
+    <string name="txt_view_all">全てを見ます</string>
+      
+    <string name="txt_precautions_for_today">今日の注意事項</string>
+      
+    <string name="first_line">-</string>
+      
+    <string name="txt_water_management">水管理</string>
+      
+    <string name="txt_call_the_manufacturer">メーカーを呼び出します。</string>
+      
+    <string name="enter_growing_stage_name">成長段階名を入力してください</string>
+      
+    <string name="enter_stage_description">ステージの説明を入力します。</string>
+      
+    <string name="require_place_name">地名を入力してください。</string>
+      
+    <string name="edit_place_name_success">編集地名成功</string>
+      
+    <string name="edit_place_name_failed">編集地名に失敗しました</string>
+      
+    <string name="invite_member_validate_authority">選択された権限を喜ば</string><![CDATA[
+
+      
+      
+    ]]>
+    <string name="step_1">ステップ1</string>
+      
+    <string name="step_2">ステップ2</string><![CDATA[
+      
+
+      
+      
+    ]]><string name="weather">天気</string><![CDATA[
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+    ]]><string name="days_until_next_stage">次のステージまでの日数</string><![CDATA[
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+    ]]>
+    <string name="proceed_to_the_next_stage">次のステージに進みます</string>
+
+    <string name="recipe_growing_crops">作物を栽培するためのレシピを設定する</string>
+      
+    <string name="set_the_place_of_field">フィールド/温室の場所を設定します。</string><![CDATA[
+      
+      
+    ]]>
+    <string name="flowering_period">開花期</string>
+      
+    <string name="subtitle">字幕</string><![CDATA[
+      
+
+      
+
+    ]]>
+    <string name="the_year_2017">2017年</string>
+
+    <string name="monday">月曜</string>
+    <string name="saturday">土曜</string>
+    <string name="sunday">日曜</string>
+
+    <string name="example_text1">最高温度は20℃以下になります</string>
+    <string name="example_text2">20日間農薬の最後のスプレー経過しました。</string>
+    <string name="example_text3">なぜなら組み合わせ障害のX-Xを含む農薬を散布しないでください。</string>
+    <string name="example_text4">水に浸漬苗の2/3（8〜10センチ）</string>
+    <string name="example_text5">応援した後、徐々に浅い水の中で管理します。</string>
+    <string name="example_text6">水が冷えているときは、水の温度を上げるために温水チューブを使用しています。</string>
+    <string name="process">Process</string>
+    <string name="map_not_ready">地図は準備ができていません。位置を変更することはできません</string>
+    <string name="request_enter_full_name">氏名は必須です.</string>
+    <string name="request_enter_email">Please enter email</string>
+    <string name="email_invalid">Email is invalid</string>
+    <string name="request_enter_nick_name">Nickname is required.</string>
+    <string name="edit_field_success">フィールドの成功を編集</string>
+    <string name="cannot_get_workplaces">Cannot get workplace list</string>
+    <string name="work_description_valid">作業説明空にすることはできません</string>
+    <string name="delete_success">削除成功</string>
+    <string name="delete_fail">削除に失敗する</string>
+    <string name="sent">送信済み</string>
+    <string name="invite_member_popup">The invitation was sent to the designated e-mail addresses. If you are invited, click the URL in the mail and complete member registration.</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_your_field_greenhouse_has_been_created">あなたのフィールド/温室が作成されました！</string>
+    <string name="timeline_notification">お知らせ</string>
+    <string name="timeline_advice">助言</string>
+    <string name="txt_current_opening">現在のオープニング</string>
+    <string name="txt_open_close">開閉</string>
+    <string name="txt_error_code">エラーコード</string>
+    <string name="txt_are_you_sure">本気ですか?</string>
+    <string name="txt__add_field_greenhouse">+ フィールド/温室を追加</string>
+    <string name="txt_amount_of_insolation">慰める金額</string>
+    <string name="txt_kwh_m2_day">kWh/m2/day</string>
+    <string name="txt_humidity">湿度</string>
+    <string name="txt_precipitation">降水</string>
+    <string name="txt_mm_3h">mm/3h</string>
+    <string name="txt_wind_velocity">風速</string>
+    <string name="txt_m_sec">m/sec</string>
+    <string name="txt_sunrise_sunset">日の出日の入り</string>
+    <string name="txt_wind_direction">風向き</string>
+    <string name="txt_east_northeast">東 - 北東</string>
+    <string name="txt_weather_temperature">気温</string>
+    <string name="recipe_list">レシピ一覧</string>
+    <string name="txt_cantgotonextstage">次のステージに行くことはできません</string>
+    <string name="text_confirm_delete_recipe">このレシピを削除しますか?</string>
+    <string name="no_recipe_available">レシピはありません</string>
+    <string name="edit_basic_information">基本情報の編集</string>
+    <string name="edit_widgets">ウィジェットを編集する</string>
+    <string name="edit_growing_stage_information">成長するステージ情報を編集する</string>
+    <string name="edit_growing_stage_rules">成長するステージルールを編集する</string>
+    <string name="message_recipe_has_no_stage">ステージが必要です</string>
+    <string name="message_clone_recipe_failed">レシピのクローン作成に失敗しました</string>
+    <string name="message_cant_add_more_recipe">レシピを追加できません</string>
+    <string name="message_cant_edit_recipe_in">東京でレシピを編集できない</string>
+    <string name="message_cannot_edit_recipe">レシピを編集できません</string>
+    <string name="cannot_go_to_next_stage">次のステージに行くことはできません</string>
+    <string name="message_cant_load_category_list">カテゴリリストを読み込めません</string>
+    <string name="message_cant_load_recipes">レシピを読み込めません</string>
+    <string name="cannot_get_details_field">選択したフィールドの情報を取得できません</string>
+    <string name="field_name_is_required">フィールド名は必須です.</string>
+    <string name="txt_c">°C</string>
+    <string name="reset_sensor">リセットセンサー</string>
+    <string name="replace_sensor">センサ交換</string>
+    <string name="cannot_clone_recipe">レシピをフィールドに追加するときにエラーが発生したため、フィールドを作成できません。</string>
+    <string name="authority_admin">管理者</string>
+    <string name="period_latest_title">最新</string>
+    <string name="period_latest_content">最新のデータを1つ表示する</string>
+    <string name="period_today_title">今日</string>
+    <string name="period_today_content">今日のデータを表示する</string>
+    <string name="period_yesterday_title">昨日</string>
+    <string name="period_yesterday_content">昨日のデータを表示する</string>
+    <string name="period_last7days_title">過去7日間</string>
+    <string name="period_last7days_content">過去7日間の今日のデータを表示する</string>
+    <string name="period_last30days_title">過去30日間</string>
+    <string name="period_last30days_content">過去30日間の今日のデータを表示する</string>
+    <string name="period_last_month_title">先月</string>
+    <string name="period_last_month_content">先月のデータを表示する</string>
+    <string name="period_specify_date_title">日付を指定する</string>
+    <string name="period_specify_date_content">開始日、終了日（オプション）、内容を含む描画</string>
+    <string name="period_specify_stage_title">ステージを指定する</string>
+    <string name="period_specify_stage_content">開始ステージ、終了ステージ（オプション）、その内容を描画</string>
+    <string name="message_please_select_the_recipe">レシピを選択してください</string>
+    <string name="above_or_below">上/下</string>
+    <string name="_1km_mesh">1km mesh</string>
+    <string name="basic_information">基本情報</string>
+    <string name="determination_standard">決定基準</string>
+    <string name="post_valid_npk">N、P、Kの値を入力してください</string>
+    <string name="timeline_edit_title">日記を編集する</string>
+    <string name="message_incorrect_email">誤ったメール</string>
+    <string name="message_please_insert_valid_email">有効なメールアドレスを入力してもう一度お試しください</string>
+    <string name="message_require_format_email">有効なメールアドレスを挿入してもう一度お試しください</string>
+    <string name="message_please_insert_valid_password">有効なパスワードを入力してもう一度お試しください</string>
+    <string name="message_require_password">パスワードが必要</string>
+    <string name="message_user_password_incorrect">ユーザーまたはパスワードの誤り</string>
+    <string name="format_date_and_time">yyyy/MM/dd - HH:mm</string>
+    <string name="graph_measurement_item">測定項目</string>
+    <string name="graph_aggregate_unit">集計単位</string>
+    <string name="graph_start_stage">スタートステージ</string>
+    <string name="graph_end_stage">終了段階</string>
+    <string name="additional_information">追加情報</string>
+    <string name="txt2add_field_greenhouse">+ フィールド/温室を追加</string>
+    <string name="message_cannot_upload_image">画像をアップロードできません。 もう一度お試しください</string>
+    <string name="rule_information">ルール情報</string>
+    <string name="view_action_information">アクション情報</string>
+    <string name="view_condition_information">条件情報</string>
+    <string name="message_incorrect_password">不正なパスワード</string>
+    <string name="date_specification_cannot_be_in_future">将来の日付指定はできません</string>
+    <string name="timeline_no_record">レコードまたは結果が見つかりません</string>
+    <string name="text_confirm_delete_condition">この状態を削除しますか？</string>
+    <string name="txt_search">サーチ</string>
+    <string name="txt_Default_Template">デフォルトテンプレート</string>
+    <string name="txt_empty_data">空のデータ</string>
+    <string name="txt_template">テンプレート</string>
+    <string name="txt_created_by">によって作成された</string>
+    <string name="aggregate_unit_raw_data">生データ</string>
+    <string name="aggregate_unit_season">シーズン</string>
+    <string name="aggregate_unit_year">年</string>
+    <string name="aggregate_unit_month">月</string>
+    <string name="aggregate_unit_day">日</string>
+    <string name="aggregate_unit_hour">時間</string>
+    <string name="aggregate_method_average">平均</string>
+    <string name="aggregate_method_total">合計</string>
+    <string name="aggregate_method_difference">差</string>
+    <string name="aggregate_method_min">最小</string>
+    <string name="aggregate_method_max">最大</string>
+    <string name="aggregate_method_nighttime_average">夜の時間</string>
+    <string name="aggregate_method_daytime_average">昼間</string>
+    <string name="measurement_item_datetime">日付時刻</string>
+    <string name="measurement_item_sunset">日没</string>
+    <string name="measurement_item_sunrise">日の出</string>
+    <string name="measurement_item_insolation_history">腐敗の歴史</string>
+    <string name="measurement_item_precipitation_history">降水量履歴</string>
+    <string name="measurement_item_wind_velecity_history">風速履歴</string>
+    <string name="measurement_item_wind_direction_history">風の方向の歴史</string>
+    <string name="measurement_item_humidity_history">湿度履歴</string>
+    <string name="measurement_item_temperature_history">温度履歴</string>
+    <string name="measurement_item_weather_history">天気予報</string>
+    <string name="measurement_item_precipitation_forecast_8_days">降水量予測8日間</string>
+    <string name="measurement_item_wind_velocity_forecast_8_days">風速予測8日</string>
+    <string name="measurement_item_wind_direction_forecast_8_days">風向予測8日</string>
+    <string name="measurement_item_humidity_forecast_8_days">8日間の湿度予測</string>
+    <string name="measurement_item_temperature_forecast_8_days">気温予測8日</string>
+    <string name="measurement_item_weather_forecast_8_days">天気予報8日間</string>
+    <string name="measurement_item_weather">天気</string>
+    <string name="measurement_item_temperature">温度</string>
+    <string name="measurement_item_humidity">湿度</string>
+    <string name="measurement_item_wind_direction">風向き</string>
+    <string name="measurement_item_wind_velecity">風速</string>
+    <string name="measurement_item_precipitation">降水</string>
+    <string name="measurement_item_amount_insolation">慰める金額</string>
+    <string name="measurement_item_insolation_forecast_3_days">償却予測3日</string>
+    <string name="measurement_item_insolation_forecast_8_days">償却予測8日</string>
+    <string name="measurement_item_weather_forecast_2_days">天気予報2日間</string>
+    <string name="measurement_item_temperature_forecast_2_days">気温予測2日</string>
+    <string name="measurement_item_humidity_forecast_2_days">湿度予測2日</string>
+    <string name="measurement_item_wind_direction_forecast_2_days">風向予測2日</string>
+    <string name="measurement_item_wind_velocity_forecast_2_days">風速予測2日</string>
+    <string name="measurement_item_precipitation_forecast_2_days">降水量予測2日</string>
+    <string name="graph_line">ライン</string>
+    <string name="graph_bar">バー</string>
+    <string name="graph_yaxis_left">Y軸（左）</string>
+    <string name="graph_yaxis_right">Y軸（右）</string>
+    <string name="graph_measuring_equipment">測定装置</string>
+    <string name="graph_moving_average">移動平均</string>
+    <string name="graph_range">範囲</string>
+    <string name="graph_aggregation_method">集計方法</string>
+    <string name="graph_integration">統合</string>
+    <string name="graph_standard_value">標準値</string>
+    <string name="graph_name">グラフ名</string>
+    <string name="graph_tag">タグ</string>
+    <string name="graph_period">期間</string>
+    <string name="graph_limited_duration">期間が限られている</string>
+    <string name="graph_start_day">開始日</string>
+    <string name="graph_end_day">終わりの日</string>
+    <string name="graph_limit_the_display_stage">表示段階を制限する</string>
+    <string name="text_here">ここにテキスト</string>
+    <string name="graph_type">グラフの種類</string>
+    <string name="graph_reference_value">基準値</string>
+    <string name="graph_accumulation">累積</string>
+    <string name="graph_calculation_method">計算方法</string>
+    <string name="graph_measuring_instrument">測定器</string>
+
+    <string name="txt_copied_by">コピーした人</string>
+    <string name="txt_complete">コンプリート</string>
+    <string name="txt_comfirm">確認</string>
+    <string name="server_error">サーバーエラー</string>
+    <string name="please_try_again_later">後でもう一度お試しください！</string>
+    <string name="license_information">ライセンス情報</string>
+    <string name="precipitation">降水量</string>
+    <string name="temperature_action">気温</string>
+    <string name="humidity_moisture">湿度</string>
+    <string name="wind_speed">風速</string>
+    <string name="solar_radiation_amount">日射量（実況のみ）</string>
+    <string name="one_km_mesh">1 km メッシュ</string>
+    <string name="total_accumulation">合計/積算</string>
+    <string name="above">上の</string>
+    <string name="Above">上の</string>
+    <string name="below">以下</string>
+    <string name="Below">以下</string>
+    <string name="begin_calculate_from">ステージからの合算</string>
+    <string name="reached">に達した場合</string>
+    <string name="greater_than_equal_to">以上</string>
+    <string name="less_than_equal_to">以下</string>
+    <string name="post_to_time_line">タイムラインに投稿</string>
+    <string name="give_simple_advice">簡単な助言を与える</string>
+    <string name="give_cultivation_management_advice">栽培管理の助言を与える</string>
+    <string name="recipe_stage_is_required">レシピ段階が必要です</string>
+    <string name="recipe_current_stage_is_required">レシピの現在のステージが必要です</string>
+    <string name="stage_name_is_already_existed">ステージ名はすでに存在しています！</string>
+    <string name="internal_server_error">内部サーバーエラー</string>
+    <string name="txt_number_1">1</string>
+    <string name="message_check_the_email">メールをチェックする</string>
+    <string name="error_email_is_required">メールが必要です</string>
+
+    <string name="tv_page1_mid_tutorial">1km範囲の気象情報が、アイコンやグラフで 見やすく表示されるので、近くにいなくても</string>
+    <string name="tv_page1_top_tutorial">“今” を知る</string>
+    <string name="tv_page1_bot_tutorial">“今”の情報がアプリで確認できる！</string>
+    <string name="tv_page2_top_tutorial">“予報”を見る</string>
+    <string name="tv_page2_mid_tutorial">3日先※までの気象情報（1km範囲）が見られるので、 準備や対処に役立てやすい！</string>
+    <string name="tv_page2_bot_tutorial">※有料版は8日先まで閲覧可能</string>
+    <string name="tv_page3_top_tutorial">“アドバイス”を受ける</string>
+    <string name="tv_page3_mid_tutorial">良い作物の育て方「レシピ」に沿って生育することで、収穫時期や異常気象をお知らせしたり、</string>
+    <string name="tv_page3_bot_tutorial">専門家のアドバイスを受けられる！</string>
+
+    <string name="stage_need_one_rule">ステージには少なくとも1つのルールが必要です</string>
+    <string name="image_10mb">アップロードした画像は10MBを超えることはできません</string>
+    <string name="image_limit">画像の制限は3です</string>
+    <string name="message_log_in_again">もう一度ログインしてください。</string>
+    <string name="read_more">… 続きを読む</string>
+    <string name="image_pick_at_least_1_image">少なくとも1つの画像を選択してください</string>
+    <string name="camera_roll">カメラロール</string>
+    <string name="permission_granted">アプリはあなたのストレージを読み書きできませんでした。 したがって、正しく機能することはできません。 この許可を与えることを検討してください</string>
+    <string name="txt_step_top">ようこそ!</string>
+    <string name="txt_step_mid1">e-kakashiサービスを利用するために2つの簡単な設定を行賢す</string>
+    <string name="tv_step2_bot1">他の作物レシピ露地：ハウスは</string>
+    <string name="txt_step2_mid">続いて。</string>
+    <string name="txt_step2_mid2">登録した作物を育てる場所を設定します</string>
+    <string name="tv_step2_bot2">初期設定完了後追加登録できます</string>
+    <string name="txt_button_step1">育てる作物、レシピを設定</string>
+    <string name="txt_button_step2">露地。ハウスの場所を設定</string>
+    <string name="action">アクション</string>
+    <string name="select_photo_album">写真アルバムを選択</string>
+    <string name="txt_step_mid2">最初に育てる作物とレシピを設定してください。</string>
+    <string name="txt_no_weather_data">場所を決定する</string>
+    <string name="complete_stage">コンプリートステージ</string>
+    <string name="move_to_next_stage">"次のステージに進む</string>
+    <string name="condition">調子</string>
+    <string name="last_stage_completed">最終段階が完了しました!</string>
+    <string name="stage_has_changed">ステージが変更されました!</string>
+    <string name="start_stage">スタートステージ</string>
+    <string name="decision_criteria">決定基準</string>
+    <string name="proceed_to_next_stage">次のステージに進む</string>
+    <string name="version">バージョン</string>
+    <string name="help">助けて</string>
+    <string name="instructions">指示</string>
+    <string name="upgradeField">複数のフィールドを管理するためのアップグレード</string>
+    <string name="viewdetail">詳細を見る</string>
+    <string name="post_fertilizer_name">肥料名*</string>
+    <string name="post_type_fertilizer">肥料名を入力してください</string>
+    <string name="post_valid_fertilizer">肥料名を入力してください</string>
+    <string name="timeline_advice_link">リンク:</string>
+    <string name="post_timeline_hint_work_type">タイプワークタイプ</string>
+    <string name="toast_not_owner">あなたはオーナーではありません</string>
+    <string name="txt_dialog_delete">フィールド/温室を削除すると、その場所で測定/登録されたすべてのデータが削除されます。 本当ですか？</string>
+    <string name="not_permission">アクセス権がありません</string>
+    <string name="message_upgrade_recipe">レシピを編集するためのアップグレード</string>
+    <string name="view_details">詳細を見る</string>
+    <string name="determine_the_location">場所を決定する</string>
+    <string name="txt_add_field">Add field failed</string>
+    <string name="device_offline">あなたのデバイスはオフラインです</string>
+</resources>

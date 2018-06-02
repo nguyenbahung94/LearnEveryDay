@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/imgToolbarBack"
+                android:layout_width="@dimen/width_21dp"
+                android:layout_height="@dimen/width_21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:contentDescription="@string/txt_content_description"
+                android:visibility="visible"
+                app:srcCompat="@drawable/icon_back"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="@string/recipe"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_size_16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgToolbarAdd"
+                android:layout_width="@dimen/width_21dp"
+                android:layout_height="@dimen/width_21dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:contentDescription="@string/txt_content_description"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/icon_add"
+                tools:ignore="VectorDrawableCompat" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="15dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnDefault"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/height_30dp"
+                android:background="@drawable/button_border"
+                android:text="@string/button_default"
+                android:textAllCaps="false"
+                android:textColor="@color/bg_green_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnCustomized"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/height_30dp"
+                android:background="@drawable/button_border"
+                android:text="@string/button_customized"
+                android:textAllCaps="false"
+                android:textColor="#7fc31b" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@color/tv_white">
+
+        <ImageView
+            android:layout_width="@dimen/width_13dp"
+            android:layout_height="@dimen/height_13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:contentDescription="@string/txt_content_description"
+            app:srcCompat="@drawable/ic_svg_search" />
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:hint="@string/search_hint"
+            android:inputType="textNoSuggestions|textPersonName"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textSize="@dimen/tv_size_15sp" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:contentDescription="@string/txt_content_description"
+            android:scaleType="center"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_svg_delete_12" />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/lin_above_snappy"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/background_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSnappyRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_marginLeft="@dimen/margin_8dp"
+        android:layout_marginRight="@dimen/margin_8dp"
+        android:layout_marginStart="@dimen/margin_8dp" />
+
+    <View
+        android:id="@+id/lin_below_snappy"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/background_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/bg_green_btn"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/add_greenhouse_height50dp"
+    android:layout_centerVertical="true"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:ignore="RtlSymmetry">
+
+    <TextView
+        android:id="@+id/tvStage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_greenhouse_height48dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/layoutIconLeft"
+        android:layout_toLeftOf="@+id/layoutIconRight"
+        android:layout_toRightOf="@+id/layoutIconLeft"
+        android:layout_toStartOf="@+id/layoutIconRight"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:singleLine="true"
+        android:textSize="@dimen/select_current_stage_text_size_15sp"
+        tools:text="Selted Planing" />
+
+    <RelativeLayout
+        android:id="@+id/layoutIconLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_7dp"
+        android:layout_marginStart="@dimen/margin_7dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_8dp">
+
+        <ImageView
+            android:id="@+id/imgChecked"
+            android:layout_width="@dimen/add_greenhouse_width24dp"
+            android:layout_height="@dimen/add_greenhouse_height24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_svg_check_35" />
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="@dimen/reorder_stage_width24dp"
+            android:layout_height="@dimen/reorder_stage_height24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/txt_content_description"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_svg_ban"
+            tools:ignore="VectorDrawableCompat" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutIconRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <ImageView
+            android:id="@+id/imgMove"
+            android:layout_width="@dimen/add_greenhouse_width24dp"
+            android:layout_height="@dimen/edit_basic_recipe_margin32dp"
+            android:contentDescription="@string/txt_content_description"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_svg_recipe_dragtoordergrowingstage" />
+
+        <ImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_svg_information_recipe" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:layout_below="@+id/tvStage"
+        android:background="@color/background_line" />
+
+</RelativeLayout>

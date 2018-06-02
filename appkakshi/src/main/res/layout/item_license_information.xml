@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_15dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/padding_15dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingStart="@dimen/padding_15dp"
+        android:textColor="@color/bold_text_color"
+        android:textSize="@dimen/add_action_text_size_16sp"
+        android:textStyle="bold"
+        tools:text="1. Alamofire" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:paddingEnd="@dimen/padding_15dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingStart="@dimen/padding_15dp"
+        android:textColor="@color/bold_text_color"
+        android:textSize="@dimen/add_action_text_size_15sp" />
+</RelativeLayout>

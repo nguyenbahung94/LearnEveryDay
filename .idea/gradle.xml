@@ -10,6 +10,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/RuntimePermissions" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appDirection" />
+            <option value="$PROJECT_DIR$/appkakshi" />
             <option value="$PROJECT_DIR$/butterknife" />
             <option value="$PROJECT_DIR$/customrecyclerview" />
             <option value="$PROJECT_DIR$/databinding" />
@@ -23,6 +25,7 @@
             <option value="$PROJECT_DIR$/rxjava" />
             <option value="$PROJECT_DIR$/subApp" />
             <option value="$PROJECT_DIR$/takeapictureandroid8" />
+            <option value="$PROJECT_DIR$/transferbitmapbetweenactivities" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

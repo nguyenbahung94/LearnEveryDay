@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/tvNameOfItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_green_btn"
+        android:gravity="center"
+        android:text="Weather Forecast(7 days)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_12sp" />
+
+    <ImageView
+        android:id="@+id/imv"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/description" />
+
+    <ImageView
+        android:id="@+id/imvRemove"
+        android:layout_width="@dimen/width_25dp"
+        android:layout_height="@dimen/height_25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        android:contentDescription="@string/description"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_remove_circle_red_24dp" />
+
+
+</RelativeLayout>

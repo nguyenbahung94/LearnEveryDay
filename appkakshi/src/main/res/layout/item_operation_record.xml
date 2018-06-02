@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_110dp"
+    android:background="@color/background_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/tv_white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp">
+
+            <ImageView
+                android:id="@+id/imvAvatar"
+                android:layout_width="@dimen/height_40dp"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:layout_marginStart="@dimen/padding_10dp"
+                android:contentDescription="@string/description" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_5dp"
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:layout_toEndOf="@id/imvAvatar"
+                android:layout_toRightOf="@id/imvAvatar"
+                android:ellipsize="end"
+                android:text="Tazo Suzuki"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_14sp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginLeft="@dimen/padding_5dp"
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_marginTop="@dimen/margin_3dp"
+                android:layout_toEndOf="@id/imvAvatar"
+                android:layout_toRightOf="@id/imvAvatar"
+                android:ellipsize="end"
+                android:text="2017/10/15 -12:34"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_20dp">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_25dp"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:layout_marginStart="@dimen/padding_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_status"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvShowStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_25dp"
+                android:layout_marginLeft="@dimen/padding_5dp"
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_toEndOf="@id/tvStatus"
+                android:layout_toRightOf="@id/tvStatus"
+                android:gravity="center_vertical"
+                android:text="CLOSE"
+                android:textSize="@dimen/tv_size_15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_25dp">
+
+            <TextView
+                android:id="@+id/tvOpenClose"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_20dp"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:layout_marginStart="@dimen/padding_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_open_close_degree"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/tv_size_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvShowOpenClose"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_25dp"
+                android:layout_marginLeft="@dimen/padding_5dp"
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_toEndOf="@id/tvOpenClose"
+                android:layout_toRightOf="@id/tvOpenClose"
+                android:gravity="center_vertical"
+                android:text="100%"
+                android:textSize="@dimen/tv_size_15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

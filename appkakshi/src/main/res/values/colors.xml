@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#282c37</color>
+    <color name="colorPrimaryDark">#282c37</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tv_white">#ffffff</color>
+    <color name="toolbar_color">#282c37</color>
+
+    <color name="tv_black">#151414</color>
+    <color name="darker_gray">#FF999999</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="grey">#707070</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#b34b4b</color>
+    <color name="red_logout">#e60c0c</color>
+    <color name="bg_toolbar">#282c37</color>
+    <color name="tv_hint">#cdced2</color>
+    <color name="bg_green_btn">#7cb342</color>
+    <color name="bg_red_btn">#e60c0c</color>
+    <color name="background_color">#ecedee</color>
+    <color name="normal_text_color">#757575</color>
+    <color name="bold_text_color">#444444</color>
+    <color name="background_line">#d2d2d2</color>
+    <color name="background_divider">#c8c7cc</color>
+    <color name="background_item_selected">#f9f9f9</color>
+    <color name="bg_account_settings">#EFEFF4</color>
+    <color name="pending_approval">#ff9500</color>
+    <color name="approval">#7fc31b</color>
+    <color name="filter_background">#ecedee</color>
+    <color name="backgroundpolygon">#337fc31b</color>
+    <color name="bg_line_view">#c8c7cc</color>
+    <color name="textcolor_blue">#7fc31b</color>
+    <color name="background_layout">#ecedee</color>
+    <color name="tvColor44">#444444</color>
+    <color name="tv_color_d2">#d2d2d2</color>
+    <color name="tvColor_d7">#757575</color>
+    <color name="tvColord8">#8a8a8f</color>
+    <color name="bg_white_f9">#f9f9f9</color>
+    <color name="tv_color_111111">#111111</color>
+    <color name="tv_color_0000">#000000</color>
+    <color name="recipe_detail_text_color">#444444</color>
+    <color name="bg_btn_filter_custom">#7cb342</color>
+
+    <color name="progressbar_color">#f69600</color>
+    <color name="progressbar_color_df">#d2d2d2</color>
+    <color name="tv_color_c8c">#c8c7cc</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="color_e6">#e6e6e6</color>
+    <color name="color_tv7f">#7fc31b</color>
+    <color name="color_tv_ffff">#ffffff</color>
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="color_tv4242">#424242</color>
+    <color name="tv_graph_title">#7db343</color>
+    <color name="text_color_blue">#7cb342</color>
+    <color name="bg_green_darker">#3f6314</color>
+    <color name="navigation_badge">#ff0000</color>
+    <color name="bg_disable_btn">#bdbdbd</color>
+    <color name="bg_btn_tutorial_ff8">#ff8859</color>
+    <color name="bg_btn_tutorial_c5d">#c5d700</color>
+    <color name="bg_tutorial_7ca">#7cad42</color>
+    <color name="bg_tutorial_4b8">#4b800d</color>
+    <color name="tv_color_7cb">#7cb342</color>
+    <color name="tv_color_bd">#bdbdbd</color>
+    <color name="timeline_url">#578edd</color>
+    <color name="timeline_readmore">#578edd</color>
+</resources>

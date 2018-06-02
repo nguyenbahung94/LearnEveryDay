@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp15"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/lin_image"
+            android:layout_width="@dimen/height_90dp"
+            android:layout_height="@dimen/height_90dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgDeleteDevice"
+                android:layout_width="@dimen/height_30dp"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:contentDescription="@string/txt_content_description"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_svg_ban" />
+
+            <ImageView
+                android:id="@+id/imgCircleItem"
+                android:layout_width="@dimen/height_50dp"
+                android:layout_height="@dimen/height_50dp"
+                android:contentDescription="@string/txt_content_description" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_toEndOf="@+id/lin_image"
+            android:layout_toLeftOf="@+id/icon_warning"
+            android:layout_toRightOf="@+id/lin_image"
+            android:layout_toStartOf="@+id/icon_warning"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvDeviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSubTitle"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCodeDeviceId"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDeviceName"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/device_item_id"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/tvCodeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvCodeDeviceId"
+                android:layout_toEndOf="@+id/tvCodeDeviceId"
+                android:layout_toRightOf="@+id/tvCodeDeviceId"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/tvRegisterDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCodeDeviceId"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text="@string/device_item_date"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvRegisterDay"
+                android:layout_toEndOf="@+id/tvRegisterDay"
+                android:layout_toRightOf="@+id/tvRegisterDay"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/tvColor44"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/icon_warning"
+            android:layout_width="@dimen/icon_21dp"
+            android:layout_height="@dimen/icon_21dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:contentDescription="@string/txt_content_description"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_svg_add_more" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_add_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginStart="@dimen/dp15"
+            android:background="@color/transparent"
+            android:contentDescription="@string/txt_content_description"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_svg_add_more" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/device_add_device"
+            android:textColor="@color/tvColor44"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekakashi.greenhouse.features.recipe.edit_basic_recipe.EditBasicRecipeActivity">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_main">
+
+        <RelativeLayout
+            android:id="@+id/llForcusDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            tools:targetApi="o">
+
+            <!--<TextView-->
+            <!--android:id="@+id/basic_info"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/margin_15dp"-->
+            <!--android:layout_marginStart="@dimen/margin_15dp"-->
+            <!--android:layout_marginTop="@dimen/edit_basic_recipe_margin32dp"-->
+            <!--android:text="@string/txt_basic_information"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="@dimen/edit_basic_recipe_text_size_20sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/recipeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/basic_info"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:text="@string/recipe_name"
+                android:textColor="@color/tv_black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recipeName"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/edtRecipeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgName"
+                    android:layout_toStartOf="@+id/imgName"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:scrollbars="vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <ImageView
+                    android:id="@+id/imgName"
+                    android:layout_width="@dimen/edit_basic_recipe_width16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/edtRecipeName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/edtRecipeName"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_delete_12" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutName"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/recipe_image"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutCheckOrDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/imgCamera"
+                    android:layout_width="@dimen/edit_basic_recipe_width30dp"
+                    android:layout_height="@dimen/edit_basic_recipe_height30dp"
+                    android:layout_marginBottom="@dimen/edit_basic_recipe_margin10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/edit_basic_recipe_margin10dp"
+                    android:contentDescription="@string/txt_content_description"
+                    android:src="@drawable/ic_camera" />
+
+                <ImageView
+                    android:id="@+id/imgGallery"
+                    android:layout_width="@dimen/edit_basic_recipe_width30dp"
+                    android:layout_height="@dimen/edit_basic_recipe_height30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/edit_basic_recipe_margin10dp"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/edit_basic_recipe_margin10dp"
+                    android:layout_toEndOf="@+id/imgCamera"
+                    android:layout_toRightOf="@+id/imgCamera"
+                    android:contentDescription="@string/txt_content_description"
+                    android:src="@drawable/ic_gallery" />
+
+                <ImageView
+                    android:id="@+id/imgRecipe"
+                    android:layout_width="@dimen/edit_basic_recipe_width30dp"
+                    android:layout_height="@dimen/edit_basic_recipe_height30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutCheckOrDelete"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/category"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgCategory"
+                    android:layout_toStartOf="@+id/imgCategory"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <ImageView
+                    android:id="@+id/imgCategory"
+                    android:layout_width="@dimen/edit_basic_recipe_width16dp"
+                    android:layout_height="@dimen/edit_basic_recipe_height16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_next" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/crop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutCategory"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/crop"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/crop"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgCrop"
+                    android:layout_toStartOf="@+id/imgCrop"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <ImageView
+                    android:id="@+id/imgCrop"
+                    android:layout_width="@dimen/edit_basic_recipe_width16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tvCrop"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tvCrop"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_next" />
+
+            </RelativeLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/place"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/edit_basic_recipe_height42dp"-->
+            <!--android:layout_below="@+id/layoutCrop"-->
+            <!--android:layout_marginBottom="@dimen/margin_16dp"-->
+            <!--android:layout_marginLeft="@dimen/margin_15dp"-->
+            <!--android:layout_marginStart="@dimen/margin_15dp"-->
+            <!--android:gravity="bottom"-->
+            <!--android:text="@string/txt_place"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="@dimen/edit_basic_recipe_text_size_16sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/layoutPlace"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/place"-->
+            <!--android:background="@color/white">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvPlace"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/edit_basic_recipe_height42dp"-->
+            <!--android:layout_below="@id/place"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingEnd="@dimen/padding_15dp"-->
+            <!--android:paddingLeft="@dimen/padding_15dp"-->
+            <!--android:paddingRight="@dimen/padding_15dp"-->
+            <!--android:paddingStart="@dimen/padding_15dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="@dimen/edit_basic_recipe_text_size_16sp"-->
+            <!--tools:text="Green house" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imgPlace"-->
+            <!--android:layout_width="@dimen/edit_basic_recipe_width16dp"-->
+            <!--android:layout_height="@dimen/edit_basic_recipe_height16dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginEnd="@dimen/margin_15dp"-->
+            <!--android:layout_marginRight="@dimen/margin_15dp"-->
+            <!--app:srcCompat="@drawable/ic_svg_next" />-->
+            <!--</RelativeLayout>-->
+
+            <TextView
+                android:id="@+id/prefecture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutCrop"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/prefecture"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutPrefecture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/prefecture"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvPrefecture"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgPrefecture"
+                    android:layout_toStartOf="@+id/imgPrefecture"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <ImageView
+                    android:id="@+id/imgPrefecture"
+                    android:layout_width="@dimen/edit_basic_recipe_width16dp"
+                    android:layout_height="@dimen/edit_basic_recipe_height16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_next" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutPrefecture"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/recipe_ver"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/version"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imgVersion"-->
+                <!--android:layout_width="@dimen/edit_basic_recipe_width16dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@id/edtVersion"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignTop="@id/edtVersion"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="@dimen/margin_15dp"-->
+                <!--android:layout_marginRight="@dimen/margin_15dp"-->
+                <!--android:contentDescription="@string/txt_content_description"-->
+                <!--app:srcCompat="@drawable/ic_svg_delete_12" />-->
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutVersion"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/author"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/author"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@null"
+                    android:gravity="start|center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imgAuthor"-->
+                <!--android:layout_width="@dimen/width_16dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@id/edtAuthor"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignTop="@id/edtAuthor"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="@dimen/margin_15dp"-->
+                <!--android:layout_marginRight="@dimen/margin_15dp"-->
+                <!--android:src="@drawable/cancel" />-->
+
+                <View
+                    android:id="@+id/lineAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1dp"
+                    android:layout_below="@+id/tvAuthor"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:background="@color/background_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lineAuthor">
+
+                    <TextView
+                        android:id="@+id/tvRevisionHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_15dp"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:layout_marginStart="@dimen/margin_15dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/see_revision_history"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                    <ImageView
+                        android:id="@+id/imgHistory"
+                        android:layout_width="@dimen/edit_basic_recipe_width16dp"
+                        android:layout_height="@dimen/edit_basic_recipe_height16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_15dp"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:contentDescription="@string/txt_content_description"
+                        app:srcCompat="@drawable/ic_svg_next" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutAuthor"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/overview"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/overview"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/edtOverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgOverview"
+                    android:layout_toStartOf="@+id/imgOverview"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/padding_8dp"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <ImageView
+                    android:id="@+id/imgOverview"
+                    android:layout_width="@dimen/edit_basic_recipe_width16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/edtOverview"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/edtOverview"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_delete_12" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/scope"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutOverview"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/scope_of_disclosure"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layoutScope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scope"
+                android:layout_marginBottom="@dimen/margin_30dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tvScope"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgScope"
+                    android:layout_toStartOf="@+id/imgScope"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <ImageView
+                    android:id="@+id/imgScope"
+                    android:layout_width="@dimen/edit_basic_recipe_width16dp"
+                    android:layout_height="@dimen/edit_basic_recipe_height16dp"
+                    android:layout_alignBottom="@id/tvScope"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tvScope"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_next" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/change_availability"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                android:layout_below="@+id/layoutScope"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginStart="@dimen/margin_15dp"
+                android:gravity="bottom"
+                android:text="@string/change_availability"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edit_basic_recipe_text_size_16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layoutChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/change_availability"
+                android:layout_marginBottom="32dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvChange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_basic_recipe_height42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:layout_toLeftOf="@+id/imgChange"
+                    android:layout_toStartOf="@+id/imgChange"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/edit_basic_recipe_text_size_15sp" />
+
+                <ImageView
+                    android:id="@+id/imgChange"
+                    android:layout_width="@dimen/edit_basic_recipe_width16dp"
+                    android:layout_height="@dimen/edit_basic_recipe_height16dp"
+                    android:layout_alignBottom="@id/tvChange"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tvChange"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:contentDescription="@string/txt_content_description"
+                    app:srcCompat="@drawable/ic_svg_next" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
