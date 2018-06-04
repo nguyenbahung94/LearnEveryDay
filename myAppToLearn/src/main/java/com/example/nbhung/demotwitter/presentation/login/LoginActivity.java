@@ -99,7 +99,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
     private void startActivity() {
         Intent intent = new Intent(LoginActivity.this, NavigationActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK );
         startActivity(intent);
     }
 
