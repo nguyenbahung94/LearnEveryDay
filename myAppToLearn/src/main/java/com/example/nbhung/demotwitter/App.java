@@ -26,7 +26,7 @@ public class App extends Application {
     }
 
     private void initInjector() {
-     //   this.appComponent = DaggerAppComponent.builder().networkModule(new NetworkModule(this)).build();
+        this.appComponent = DaggerAppComponent.builder().networkModule(new NetworkModule(this)).build();
     }
 
     public static AppComponent getAppComponent(Context context) {
