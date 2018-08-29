@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../LearnEveryDay.iml" filepath="$PROJECT_DIR$/../LearnEveryDay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RuntimePermissions/RuntimePermissions.iml" filepath="$PROJECT_DIR$/../RuntimePermissions/RuntimePermissions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../appDirection/appDirection.iml" filepath="$PROJECT_DIR$/../appDirection/appDirection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../butterknife/butterknife.iml" filepath="$PROJECT_DIR$/../butterknife/butterknife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../customrecyclerview/customrecyclerview.iml" filepath="$PROJECT_DIR$/../customrecyclerview/customrecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../databinding/databinding.iml" filepath="$PROJECT_DIR$/../databinding/databinding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demoApp/demoApp.iml" filepath="$PROJECT_DIR$/../demoApp/demoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../designpattern/designpattern.iml" filepath="$PROJECT_DIR$/../designpattern/designpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dragger2/dragger2.iml" filepath="$PROJECT_DIR$/../dragger2/dragger2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../effectivejava/effectivejava.iml" filepath="$PROJECT_DIR$/../effectivejava/effectivejava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../exampleViewModel/exampleViewModel.iml" filepath="$PROJECT_DIR$/../exampleViewModel/exampleViewModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../java8/java8.iml" filepath="$PROJECT_DIR$/../java8/java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myAppToLearn.iml" filepath="$PROJECT_DIR$/myAppToLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rxjava/rxjava.iml" filepath="$PROJECT_DIR$/../rxjava/rxjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../subApp/subApp.iml" filepath="$PROJECT_DIR$/../subApp/subApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../takeapictureandroid8/takeapictureandroid8.iml" filepath="$PROJECT_DIR$/../takeapictureandroid8/takeapictureandroid8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../transferbitmapbetweenactivities/transferbitmapbetweenactivities.iml" filepath="$PROJECT_DIR$/../transferbitmapbetweenactivities/transferbitmapbetweenactivities.iml" />
+    </modules>
+  </component>
+</project>

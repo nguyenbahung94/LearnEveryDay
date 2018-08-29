@@ -22,6 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".presentation.register.RegisterActivity" />
+        <activity
+            android:name=".presentation.navigation.NavigationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>
